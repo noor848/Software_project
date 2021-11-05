@@ -1,12 +1,15 @@
 Give Me Attention (GMA) System.
 
+Our Notion page:
+https://alkaline-railway-e6c.notion.site/GMA-System-55c9db15c4a342518a8d280496f69567
+
 Team members:
-Tasbeh Takrore: Scrum Master.
-Noor Braik: design verification.
-Sura Khlouf: UI/UX design.
-Masa Abu Odeh: designer.
-Amal zetawi: Frontend developer.
-Aya Hamdan: Backend developer.
+1.Tasbeh Takrore: Scrum Master.
+2.Noor Braik: design verification.
+3.Sura Khlouf: UI/UX design.
+4.Masa Abu Odeh: designer.
+5.Amal zetawi: Frontend developer.
+6.Aya Hamdan: Backend developer.
 
 
 Stakeholder:
@@ -23,5 +26,3 @@ Stakeholder:
 6. Parents :  taking their opinion  and  doing testing.
 
 
-Our Notion page:
-https://alkaline-railway-e6c.notion.site/GMA-System-55c9db15c4a342518a8d280496f69567
