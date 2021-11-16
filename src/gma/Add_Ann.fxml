@@ -14,7 +14,7 @@
       <AnchorPane layoutX="291.0" layoutY="11.0" prefHeight="500.0" prefWidth="390.0">
          <children>
             <TextField fx:id="email" layoutX="77.0" layoutY="147.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter announcement title" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <Button layoutY="406.0" mnemonicParsing="false" onAction="#loginButt" prefHeight="61.0" prefWidth="139.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Add" textFill="#477fdae5" />
+            <Button layoutX="-51.0" layoutY="406.0" mnemonicParsing="false" onAction="#loginButt" prefHeight="61.0" prefWidth="190.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add" textFill="#477fdae5" />
             <Label layoutX="26.0" layoutY="152.0" prefHeight="21.0" prefWidth="120.0" text="Title" textFill="#0b7cc6f2">
                <font>
                   <Font name="Californian FB" size="19.0" />
@@ -31,13 +31,13 @@
                   <Image url="@../img/50949620_373112316802174_191790437457985536_n.gif" />
                </image>
             </ImageView>
-            <Button layoutX="222.0" layoutY="406.0" mnemonicParsing="false" onAction="#back_butt" prefHeight="61.0" prefWidth="139.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Back" textFill="#477fdae5" />
-            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="11.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="171.0" layoutY="406.0" mnemonicParsing="false" onAction="#back_butt" prefHeight="61.0" prefWidth="190.0" styleClass="shiny" stylesheets="@mystyle.css" text="Back" textFill="#477fdae5" />
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="-28.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/20647425811537355420-64.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="229.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="196.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/14787197661582004498-128.png" />
                </image>
