@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="814.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gma.CompanyEditInfoController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="814.0" style="-fx-background-color: #c5e0e0;">
+         <children>
+            <AnchorPane prefHeight="613.0" prefWidth="312.0" style="-fx-background-color: #62989c;">
+               <children>
+                  <Label layoutX="32.0" layoutY="44.0" prefHeight="66.0" prefWidth="266.0" text="Edit Company Info" textFill="#ffee00">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="BASELINE_RIGHT" layoutX="20.0" layoutY="555.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="95.0" style="-fx-background-color: #62989c;" text="Back" textFill="#265375">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="25.0" fitWidth="40.0" layoutX="30.0" layoutY="565.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/709624.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="294.0" fitWidth="223.0" layoutX="37.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/3073443.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="343.0" layoutY="229.0" prefHeight="43.0" prefWidth="161.0" text="Email:" textFill="#1e0697">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="343.0" layoutY="269.0" prefHeight="43.0" prefWidth="161.0" text="Password" textFill="#1e0697">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="343.0" layoutY="312.0" prefHeight="43.0" prefWidth="161.0" text="Confirm Password:" textFill="#1e0697">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="516.0" layoutY="217.0" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: transperent; -fx-border-color: #1e0697; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField layoutX="516.0" layoutY="257.0" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: transperent; -fx-border-color: #1e0697; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField layoutX="516.0" layoutY="300.0" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: transperent; -fx-border-color: #1e0697; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button layoutX="516.0" layoutY="386.0" mnemonicParsing="false" onAction="#UpdateCompanyInfoButton" prefHeight="43.0" prefWidth="257.0" style="-fx-background-color: #FFFF32;" text="Update information" textFill="#265375">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <Label layoutX="473.0" layoutY="195.0" prefHeight="33.0" prefWidth="286.0" />
+            <ImageView fitHeight="154.0" fitWidth="334.0" layoutX="407.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
