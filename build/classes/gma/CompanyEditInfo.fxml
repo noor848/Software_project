@@ -55,7 +55,7 @@
             <TextField layoutX="516.0" layoutY="217.0" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: transperent; -fx-border-color: #1e0697; -fx-border-width: 0px 0px 2px 0px;" />
             <TextField layoutX="516.0" layoutY="257.0" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: transperent; -fx-border-color: #1e0697; -fx-border-width: 0px 0px 2px 0px;" />
             <TextField layoutX="516.0" layoutY="300.0" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: transperent; -fx-border-color: #1e0697; -fx-border-width: 0px 0px 2px 0px;" />
-            <Button layoutX="516.0" layoutY="386.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="257.0" style="-fx-background-color: #FFFF32;" text="Update information" textFill="#265375">
+            <Button layoutX="516.0" layoutY="386.0" mnemonicParsing="false" onAction="#UpdateCompanyInfoButton" prefHeight="43.0" prefWidth="257.0" style="-fx-background-color: #FFFF32;" text="Update information" textFill="#265375">
                <font>
                   <Font size="21.0" />
                </font>

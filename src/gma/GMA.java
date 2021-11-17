@@ -43,7 +43,7 @@ public class GMA extends Application {
     private AnchorPane AnchorPane;
     
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
        Parent root = FXMLLoader.load(getClass().getResource("schoolPage.fxml"));
         //String css = GMA.class.getResource("mystyle.css").toExternalForm();
        /// scene.getStylesheets().add(css);
@@ -54,6 +54,8 @@ public class GMA extends Application {
                  stage.initStyle(StageStyle.TRANSPARENT);
                stage.setTitle("Doctor profile");
                stage.show();
+                System.out.print("hello world");
+      
     }
 
     /**
@@ -64,9 +66,16 @@ public class GMA extends Application {
             double prog = (100*i)/count;
             LauncherImpl.notifyPreloader(this, new Preloader.ProgressNotification(prog));
         }
+        
+        
+        
+        
+        
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         LauncherImpl.launchApplication(GMA.class, myproc.class, args);
+       
+        
     }
     
 }

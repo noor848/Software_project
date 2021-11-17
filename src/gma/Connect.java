@@ -8,6 +8,7 @@ package gma;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -23,18 +24,23 @@ public class Connect {
                 
 try {
     conn =
-       DriverManager.getConnection("jdbc:mysql://localhost:3306/gma?zeroDateTimeBehavior=convertToNull", "root", "");
+       DriverManager.getConnection("jdbc:mysql://localhost:3306/gma","root","");
 
     // Do something with the Connection
+    System.out.println("connected to  database");
 
-   
+     JOptionPane.showMessageDialog(null, " connected ");
 } catch (SQLException ex) {
     // handle any errors
-  
-    System.out.println("not connected");
+    JOptionPane.showMessageDialog(null, "not connected ");
+    System.out.println("not connected to  database");
 }
     
     
     }
+    
+    
+    
+    
     
 }

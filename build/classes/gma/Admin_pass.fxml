@@ -107,14 +107,14 @@
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Button layoutX="236.0" layoutY="551.0" mnemonicParsing="false" onAction="#back_butt" prefHeight="54.0" prefWidth="131.0" styleClass="exit" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Back" />
+            <Button layoutX="236.0" layoutY="551.0" mnemonicParsing="false" onAction="#back_butt" prefHeight="54.0" prefWidth="131.0" styleClass="shiny" stylesheets="@mystyle.css" text="Back" />
             <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="256.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../../Desktop/DataBase/hos/src/hospital/img/10518404451618134427-48.png" />
                </image>
             </ImageView>
-            <Button layoutX="654.0" layoutY="551.0" mnemonicParsing="false" onAction="#update_butt" prefHeight="54.0" prefWidth="131.0" styleClass="exit" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Update" />
-            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="666.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="654.0" layoutY="551.0" mnemonicParsing="false" onAction="#update_butt" prefHeight="54.0" prefWidth="131.0" styleClass="shiny" stylesheets="@mystyle.css" text="Update" />
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="663.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../../Desktop/DataBase/hos/src/hospital/img/8017053371585493766-48.png" />
                </image>
