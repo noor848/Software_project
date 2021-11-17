@@ -19,23 +19,20 @@ public class Connect {
     Connection conn = null;
   
     
-    public void connect_datbade() throws ClassNotFoundException, InstantiationException, IllegalAccessException{
-                Class.forName("com.mysql.jdbc.Driver").newInstance();
+    public  static Connection connect_datbade() throws ClassNotFoundException, InstantiationException, IllegalAccessException{
+                Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
                 
-try {
-    conn =
-       DriverManager.getConnection("jdbc:mysql://localhost:3306/gma","root","");
 
+    conn = DriverManager.getConnection("jdbc:mysql://localhost/phpmyadmin/index.php?route=/database/structure&server=1&db=gma","root","");
     // Do something with the Connection
-    System.out.println("connected to  database");
-
-     JOptionPane.showMessageDialog(null, " connected ");
-} catch (SQLException ex) {
-    // handle any errors
-    JOptionPane.showMessageDialog(null, "not connected ");
-    System.out.println("not connected to  database");
-}
+    System.out.println("connected to database");
     
+  
+    return conn;
+    
+    
+    
+}
     
     }
     
