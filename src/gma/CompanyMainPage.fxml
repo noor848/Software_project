@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="814.0" style="-fx-background-color: #c5e0e0;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gma.CompanyMainPageController">
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="814.0" style="-fx-background-color: #c5e0e0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.CompanyMainPageController">
    <children>
       <AnchorPane layoutX="273.0" prefHeight="620.0" prefWidth="268.0" style="-fx-background-color: #FFFF32;" />
       <AnchorPane layoutX="280.0" prefHeight="620.0" prefWidth="254.0" style="-fx-background-color: #62989c;">
@@ -28,7 +27,7 @@
                   <Image url="@../img/2995459.png" />
                </image>
             </ImageView>
-            <Button layoutX="49.0" layoutY="377.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="155.0" style="-fx-background-color: #FFFF32;" text="New School" textFill="#265375">
+            <Button layoutX="49.0" layoutY="377.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="155.0" style="-fx-background-color: #FFFF32;" styleClass="shiny" stylesheets="@mystyle.css" text="New School" textFill="#265375">
                <font>
                   <Font size="19.0" />
                </font>
