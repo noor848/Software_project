@@ -20,7 +20,7 @@ public class Connect {
   
     
     public  static Connection connect_datbade() throws ClassNotFoundException, InstantiationException, IllegalAccessException{
-                Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+                Class.forName("com.mysql.cj.jdbc.Driver");
                 
 
     conn = DriverManager.getConnection("jdbc:mysql://localhost/phpmyadmin/index.php?route=/database/structure&server=1&db=gma","root","");
