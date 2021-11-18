@@ -54,8 +54,12 @@ public class Sign_inController implements Initializable {
     private void loginButt(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
         
        
+
        Connect c= new Connect();
        Connection con= c.connect_datbade();
+=======
+       Connection con= Connect.connect_datbade();
+
         
         String email1=email.getText();
         String password1=pass.getText();
