@@ -6,6 +6,7 @@
 package gma;
 
 import java.io.IOException;
+import static java.lang.Integer.parseInt;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -59,18 +60,20 @@ public class Sign_inController implements Initializable {
         String password1=pass.getText();
         
    
-      	String q="SELECT * FROM school_maneger";
-                      Statement statement=con.createStatement( ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+      	String q = "SELECT * FROM school_maneger";
+        Statement statement=con.createStatement( ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
               ResultSet rs=statement.executeQuery(q);
           rs.absolute(0); //befor and afte first an dlast row
       while (rs.next()) {
-        String pass1 = rs.getString(1);
-         String email2 = rs.getString(2);
-                System.out.println(email2);
+       
+                System.out.println(rs.getString(1));
        
                        
                 
       }
+      
+      
+      
       
       
       if(flag==1){
