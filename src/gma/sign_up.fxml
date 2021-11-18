@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -28,8 +29,6 @@
                <children>
                   <TextField fx:id="FullName" layoutX="125.0" layoutY="151.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter your full name" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
                   <PasswordField fx:id="pass" layoutX="126.0" layoutY="241.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter your password" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-                  <Button layoutX="108.0" layoutY="444.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Sign up" textFill="#477fdae5" />
-                  <Button id="bevel" layoutX="236.0" layoutY="444.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="43.0" prefWidth="88.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Exit" textFill="#487fd9e5" />
                   <Label layoutX="15.0" layoutY="157.0" prefHeight="21.0" prefWidth="120.0" text="Full Name" textFill="#0b7cc6f2">
                      <font>
                         <Font name="Californian FB" size="19.0" />
@@ -58,17 +57,16 @@
                         <Font name="Californian FB" size="19.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="phone" layoutX="125.0" layoutY="376.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter your phone" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-                  <Label layoutX="15.0" layoutY="382.0" prefHeight="21.0" prefWidth="120.0" text="Phone" textFill="#0b7cc6f2">
-                     <font>
-                        <Font name="Californian FB" size="19.0" />
-                     </font>
-                  </Label>
                   <ImageView fitHeight="125.0" fitWidth="248.0" layoutX="52.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
                      </image>
                   </ImageView>
+                  <RadioButton layoutX="-9.0" layoutY="390.0" mnemonicParsing="false" text="Student" textFill="#0b7cc6" />
+                  <RadioButton layoutX="124.0" layoutY="390.0" mnemonicParsing="false" text="Parent" textFill="#0b7cc6" />
+                  <RadioButton layoutX="245.0" layoutY="390.0" mnemonicParsing="false" text="Teacher" textFill="#0b7cc6" />
+                  <Button layoutX="240.0" layoutY="426.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Sign up" textFill="#477fdae5" />
+                  <Button id="bevel" layoutX="-10.0" layoutY="428.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="43.0" prefWidth="88.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Exit" textFill="#487fd9e5" />
                </children>
             </AnchorPane>
             <ImageView fitHeight="183.0" fitWidth="253.0" layoutX="12.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
@@ -89,11 +87,6 @@
             <ImageView fitHeight="21.0" fitWidth="33.0" layoutX="279.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/19047501981578982961-24.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="33.0" fitWidth="28.0" layoutX="276.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/18070286501543238910-24.png" />
                </image>
             </ImageView>
          </children>
