@@ -14,10 +14,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import javafx.scene.paint.Color;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -25,6 +30,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseDragEvent;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javax.swing.JOptionPane;
 
 /**
@@ -51,10 +57,10 @@ public class Sign_inController implements Initializable {
     }    
 
     @FXML
-    private void loginButt(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
+    private void loginButt(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException, Exception {
         
-       
-       Connection con= Connect.connect_datbade();
+       Connect c=new Connect();
+       Connection con= c.connect_datbade();
         
         String email1=email.getText();
         String password1=pass.getText();
@@ -66,9 +72,14 @@ public class Sign_inController implements Initializable {
           rs.absolute(0); //befor and afte first an dlast row
       while (rs.next()) {
        
-                System.out.println(rs.getString(1));
+              if(email1.equalsIgnoreCase(rs.getString("Email"))&&password1.equals(rs.getString("password")))
        
-                       
+              {
+                  
+                
+              flag=1;
+              break;
+              }
                 
       }
       
@@ -77,22 +88,30 @@ public class Sign_inController implements Initializable {
       
       
       if(flag==1){
+        System.out.print("hello");
+  
+try {
+                Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("Admin.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.setTitle("Admin profile");
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();} 
+catch (IOException ex) {
+            
+        }
+
+            } 
+          
+
+
       
-         try {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("Admin.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        Stage stage = new Stage();
-        stage.setTitle("New Window");
-        stage.setScene(scene);
-        stage.show();
-    } catch (IOException e) {
-       
-    }
       
       
-      
-      }
       
       else{
       
