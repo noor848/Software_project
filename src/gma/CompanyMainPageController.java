@@ -5,31 +5,53 @@
  */
 package gma;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 import static javafx.application.ConditionalFeature.FXML;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
  *
  * @author USER
  */
+
+
+
 public class CompanyMainPageController implements Initializable {
     
+    Stage stage;
     
     /**
      * Initializes the controller class.
      */
+  
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
     
+ @FXML
+    private void open_signin(ActionEvent event) throws IOException {
+        
+        Parent root = FXMLLoader.load(getClass().getResource("CompanySignInPage.fxml"));
+        stage = new Stage();
+        stage.setTitle("Company Sign in Page");
+        stage.setScene(new Scene(root));
+        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
 
+        
+    }
     
 }

@@ -8,10 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="814.0" style="-fx-background-color: #62989c;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gma.CompanyConfirmLoginController">
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="814.0" style="-fx-background-color: #62989c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.CompanyConfirmLoginController">
    <children>
-      <TextField fx:id="email" alignment="BOTTOM_CENTER" layoutX="203.0" layoutY="307.0" prefHeight="33.0" prefWidth="409.0" promptText="Enter the code sent to your email" style="-fx-background-color: transperent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;">
+      <TextField fx:id="CodeConfirm" alignment="BOTTOM_CENTER" layoutX="203.0" layoutY="307.0" prefHeight="33.0" prefWidth="409.0" promptText="Enter the code sent to your email" style="-fx-background-color: transperent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;">
          <font>
             <Font size="18.0" />
          </font>
@@ -21,12 +20,12 @@
             <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
          </image>
       </ImageView>
-      <Button layoutX="254.0" layoutY="388.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="307.0" style="-fx-background-color: #FFFF32;" text="Confirm" textFill="#265375">
+      <Button layoutX="254.0" layoutY="388.0" mnemonicParsing="false" onAction="#ConfirmAction" prefHeight="45.0" prefWidth="307.0" style="-fx-background-color: #FFFF32;" text="Confirm" textFill="#265375">
          <font>
             <Font size="21.0" />
          </font>
       </Button>
-      <Button alignment="BASELINE_RIGHT" layoutX="20.0" layoutY="559.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="95.0" style="-fx-background-color: #62989c;" text="Back" textFill="#265375">
+      <Button alignment="BASELINE_RIGHT" layoutX="20.0" layoutY="559.0" mnemonicParsing="false" onAction="#BackAction" prefHeight="43.0" prefWidth="95.0" style="-fx-background-color: #62989c;" text="Back" textFill="#265375">
          <font>
             <Font size="19.0" />
          </font>
