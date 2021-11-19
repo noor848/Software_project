@@ -7,6 +7,8 @@ package gma;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,7 +17,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 
 /**
  * FXML Controller class
@@ -23,6 +27,9 @@ import javafx.stage.Stage;
  * @author zaytona
  */
 public class SignUp_studentClassController implements Initializable {
+
+    @FXML
+    private TextField idc;
 
     /**
      * Initializes the controller class.
@@ -33,7 +40,35 @@ public class SignUp_studentClassController implements Initializable {
     }    
      
      @FXML
-    private void Add (ActionEvent event){
+    private void Add (ActionEvent event) throws Exception{
+        
+      
+       
+       Connect c=new Connect();
+ 
+       Connection con= c.connect_datbade();
+       
+     
+         String query1 = " insert into studentclass(student_id,class_id)"
+        + " values (?, ?)";
+
+      // create the mysql insert preparedstatement
+      PreparedStatement preparedStmt2 = con.prepareStatement(query1);
+      System.out.print(StudentCLass.id);
+      preparedStmt2.setInt(1,StudentCLass.id);
+      preparedStmt2.setInt(2,Integer.parseInt(idc.getText()));
+  
+      preparedStmt2.execute();
+      
+      
+      
+      
+      
+      
+        
+        
+        
+        
     }
      @FXML
     private void back(ActionEvent event){

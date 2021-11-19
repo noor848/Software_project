@@ -15,7 +15,16 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
-
+import gma.StudentCLass;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
+import javafx.scene.input.MouseEvent;
 /**
  * FXML Controller class
  *
@@ -35,11 +44,8 @@ public class Sign_upController implements Initializable {
     private PasswordField pass;
     @FXML 
     private TextField id;
-    @FXML 
-    private TextField title;
-    
-    @FXML 
-    private TextField phone;
+    @FXML
+    private RadioButton studentButton;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -52,6 +58,60 @@ public class Sign_upController implements Initializable {
 } else {
     
 }
+    }
+
+
+
+    @FXML
+    private void choosedStudent(ActionEvent event) throws Exception {
+        
+        
+        if(studentButton.isSelected()){
+            System.out.print("hello");
+             StudentCLass c= new  StudentCLass(Integer.parseInt(id.getText()),FullName.getText(),email.getText(),pass.getText());
+        
+        try {
+                Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("signUp_studentClass.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();} 
+catch (IOException ex) {
+            
+        } 
+        
+        
+        
+         Connect c1=new Connect();
+ 
+       Connection con= c1.connect_datbade();
+       
+       
+       
+          String query = " insert into student(id_s,name_s,Email,password,id_maneger)"
+        + " values (?,?,?,?,?)";
+
+      // create the mysql insert preparedstatement
+      PreparedStatement preparedStmt = con.prepareStatement(query);
+      System.out.print(StudentCLass.id);
+      preparedStmt.setInt(1,StudentCLass.id);
+      preparedStmt.setString(2,StudentCLass.name);
+       preparedStmt.setString(3,StudentCLass.email);
+        preparedStmt.setString(4,StudentCLass.password);
+         preparedStmt.setInt(5,4);
+  
+      preparedStmt.execute();
+       
+       
+        
+        
+        
+        }
+        
     }
     
 }
