@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -29,37 +30,44 @@ public class CompanyConfirmLoginController implements Initializable {
     @FXML
     private TextField CodeConfirm;
     
+    @FXML
+    private Label ErrorLabel;
+    
     //The confirmCode need to be git from what the email send.. not lilke this.
     String confCode ="0000";
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
-
-
+            
     }   
     
         @FXML
         private void ConfirmAction(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, Exception {
         
-              if(CodeConfirm.getText().equals(confCode)){
+            System.out.println(CodeConfirm.getText().toString());
+            
+              if(CodeConfirm.getText().toString().equals(confCode)){
             
               try {
+                  
                Stage stage = new Stage();
                Parent root;
-        
                root = FXMLLoader.load(getClass().getResource("CompanyMainPage.fxml"));
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);
-               stage.setTitle("Company Main Page");
+               stage.setTitle("confirm page");
                stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();
-            } 
+              }
             catch (IOException ex) {
-            
+            System.out.println("From Exp***"+ex);
                     }
             
+              }
+              else{
+              ErrorLabel.setText("Incorrect Code");
               }
         }
         
@@ -80,7 +88,7 @@ public class CompanyConfirmLoginController implements Initializable {
                stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();
             } 
-            catch (IOException ex) {
+            catch (IOException ex){
             
                     }
             

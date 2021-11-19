@@ -44,22 +44,21 @@ public class CompanySignInPageController implements Initializable {
     
 
     
-    String defMail= "comp@gmail.com";
-    String defPass= "Comp123456";
+    String defMail= "cc";
+    String defPass= "22";
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }   
-            //@FXML
+            @FXML
             public void SignInAction(ActionEvent event) throws IOException {
 
-                System.out.print("Inside sign in action");
-             if(emailTF.getText().equals(defMail) && passTF.getText().equals(defPass)){ 
-                 
-                 // Send email with code
-                 
+                System.out.print("Inside sign in Action 123**" + emailTF.getText().toString()+"///"+passTF.getText().toString());
+             if(emailTF.getText().toString().equals(defMail) && passTF.getText().toString().equals(defPass)){ 
+                System.out.print("Inside If Tru Data");
+
             try {
                Stage stage = new Stage();
                Parent root;
@@ -78,28 +77,14 @@ public class CompanySignInPageController implements Initializable {
             
                     }
              }
-             else{
-                 
-             LabelError.setText("The Email or Password is incorrect");
+             else{ 
+              System.out.println("Inside else---");
 
+             LabelError.setText("The Email or Password is incorrect");
              } 
         }
             
-//            /////////
-//                    EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
-//            public void handle(ActionEvent e)
-//            {
-//                System.out.print("in eeevent");
-//            }
-//        };
-//  
-//        // when button is pressed
-//        signinbutt.setOnAction(event);
-//        
-//        
-        ////////
-            
-            
+
 
                         
            @FXML

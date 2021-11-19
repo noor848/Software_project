@@ -24,23 +24,18 @@ public class GMACompany extends Application {
    // private static Stage stg;
     
 
-      private static Stage stg;
+     // private Stage stg;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        stg = primaryStage;
+       Stage stg = primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("CompanySignInPage.fxml"));
-        primaryStage.setTitle("Company Sign in Page");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        stg.setTitle("Company Sign in Page");
+        stg.setScene(new Scene(root));
+        stg.show();
     }
 
-//    public void changeScene(String fxml) throws IOException {
-//        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
-//        stg.getScene().setRoot(pane);
-//    }
-     
     
     public static void main(String[] args){
         launch (args);

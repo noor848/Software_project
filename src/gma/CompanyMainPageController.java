@@ -41,17 +41,6 @@ public class CompanyMainPageController implements Initializable {
         // TODO
     }    
     
- @FXML
-    private void open_signin(ActionEvent event) throws IOException {
-        
-        Parent root = FXMLLoader.load(getClass().getResource("CompanySignInPage.fxml"));
-        stage = new Stage();
-        stage.setTitle("Company Sign in Page");
-        stage.setScene(new Scene(root));
-        stage.show();
-        ((Node)(event.getSource())).getScene().getWindow().hide();
 
-        
-    }
     
 }
