@@ -6,12 +6,21 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<<<<<<< HEAD
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="814.0" style="-fx-background-color: #c5e0e0;">
+         <children>
+            <Button layoutX="229.0" layoutY="296.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add announcement" />
+            <Button layoutX="519.0" layoutY="297.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Change My Password" />
+=======
 <AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.AdminController">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="814.0" style="-fx-background-color: #c5e0e0;">
          <children>
             <Button layoutX="229.0" layoutY="296.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add announcement" />
             <Button layoutX="519.0" layoutY="297.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Change My Password" />
+>>>>>>> master
             <ImageView fitHeight="140.0" fitWidth="306.0" layoutX="352.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
@@ -29,7 +38,11 @@
                         <Image url="@../../../../../../../../Desktop/DataBase/hos/src/hospital/img/16997116491579762120-128.png" />
                      </image>
                   </ImageView>
+<<<<<<< HEAD
+                  <Button layoutX="48.0" layoutY="530.0" mnemonicParsing="false"  prefHeight="54.0" prefWidth="131.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Logout" />
+=======
                   <Button layoutX="48.0" layoutY="530.0" mnemonicParsing="false" onAction="#logout" prefHeight="54.0" prefWidth="131.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Logout" />
+>>>>>>> master
                   <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="55.0" layoutY="546.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../../../../../Desktop/DataBase/hos/src/hospital/img/10518404451618134427-48.png" />
@@ -42,8 +55,13 @@
                   </ImageView>
                </children>
             </AnchorPane>
+<<<<<<< HEAD
+            <Button layoutX="229.0" layoutY="230.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add Class" />
+            <Button layoutX="519.0" layoutY="231.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="266.0" styleClass="shiny" text="Add subject">
+=======
             <Button layoutX="229.0" layoutY="230.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add Class" />
             <Button layoutX="519.0" layoutY="231.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" text="Add subject">
+>>>>>>> master
                <stylesheets>
                   <URL value="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" />
                   <URL value="@mystyle.css" />

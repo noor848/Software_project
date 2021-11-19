@@ -3,79 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="4d3adc0d-037b-4c6d-acb3-80af9c3d0407" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/nbproject/jfx-impl_backup_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/AddClass.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/AddClassController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/AddSub.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/AddSubController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Add_Ann.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Add_AnnController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Admin.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Admin_pass.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Admin_passController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanyConfirmLogin.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanyConfirmLoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanyEditInfo.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanyEditInfoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanyMainPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanyMainPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanySchoolsPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanySchoolsPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanySignInPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanySignInPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Connect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/GMA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Loadd.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/LoaddController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/SchoolPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Sign_inController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/Sign_upController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/myproc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/myproc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/mystyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/schoolPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/sign_in.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/gma/sign_up.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/13764952091536837650-128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/14787197661582004498-128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/15297262951582799500-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/16462029671582806316-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/17503049231586786427-16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/18070286501543238910-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/18497442851530273523-128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/19047501981578982961-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/20647425811537355420-64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/2891415.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/2995459.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/3073443.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/3232868021582113973-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/5-59452_cartoons-for-play-school-clipart-png-download-cartoon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/50949620_373112316802174_191790437457985536_n.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/569025.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/56945-1-back-to-school-kids-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/66-669584_play-school-cartoon-png-transparent-png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/709624.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/7205445111595501398-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/XcF5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/animated-cartoon-school-pencil.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/animated-clipart-student-sliding-down-stack-books-05c.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/boy-with-pen-notebook-animation.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/cartoon-school-children-cute-design-vector-03-free.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/control-system.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/giphy.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/giphy_1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/icegif-497.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/onlinelogomaker-111321-2108-7977.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/padlock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/img/school.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/GMA.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/GMA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/GMA.jnlp" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/jfx-impl_backup_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/gma/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/gma/Admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanyMainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/gma/CompanyMainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanySignInPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/gma/CompanySignInPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/gma/CompanySignInPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/gma/CompanySignInPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/gma/Connect.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/gma/Connect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/gma/Sign_inController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/gma/Sign_inController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/gma/sign_up.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/gma/sign_up.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/GMA.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/GMA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/GMA.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/GMA.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/GMA.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/dist/GMA.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/20211103_second-assignment.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/web-files/dtjava.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/web-files/dtjava.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/UPDATED.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/UPDATED.TXT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/jfx-impl.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gma/CompanySignInPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gma/CompanySignInPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gma/CompanySignInPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gma/CompanySignInPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gma/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gma/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gma/Sign_inController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gma/Sign_inController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -107,6 +57,8 @@
       <option name="presentableId" value="Default" />
       <updated>1637265856507</updated>
       <workItem from="1637265860008" duration="62000" />
+      <workItem from="1637355124961" duration="75000" />
+      <workItem from="1637355219036" duration="829000" />
     </task>
     <servers />
   </component>

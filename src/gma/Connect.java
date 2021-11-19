@@ -30,9 +30,6 @@ public class Connect {
     conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gma","root","");
 
 
-    // Do something with the Connection
-    System.out.println("connected to database");
-    
   
     return conn;
 

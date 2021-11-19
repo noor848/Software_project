@@ -10,6 +10,12 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+<<<<<<< HEAD
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+=======
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,6 +28,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
+>>>>>>> master
 
 /**
  * FXML Controller class
@@ -31,6 +38,26 @@ import javax.swing.JOptionPane;
 public class CompanySignInPageController implements Initializable {
 
     @FXML
+<<<<<<< HEAD
+    private TextField email;
+    @FXML
+    private PasswordField pass;
+
+    /**
+     * Initializes the controller class.
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+
+    @FXML
+    private void signin(ActionEvent event) {
+        System.out.print("hello");
+        
+        
+    }
+=======
     private TextField emailTF;
     @FXML
     private TextField passTF;
@@ -104,5 +131,6 @@ public class CompanySignInPageController implements Initializable {
             }
             
 
+>>>>>>> master
     
 }

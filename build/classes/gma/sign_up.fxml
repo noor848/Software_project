@@ -56,10 +56,17 @@
                         <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
                      </image>
                   </ImageView>
+<<<<<<< HEAD
+                  <RadioButton fx:id="student" layoutX="-9.0" layoutY="390.0" mnemonicParsing="false" onAction="#student_choosed" text="Student" textFill="#0b7cc6" />
+                  <RadioButton layoutX="124.0" layoutY="390.0" mnemonicParsing="false" text="Parent" textFill="#0b7cc6" />
+                  <RadioButton layoutX="245.0" layoutY="390.0" mnemonicParsing="false" text="Teacher" textFill="#0b7cc6" />
+                  <Button id="bevel" layoutX="126.0" layoutY="434.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="43.0" prefWidth="88.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Exit" textFill="#487fd9e5" />
+=======
                   <RadioButton fx:id="studentButton" layoutX="-9.0" layoutY="390.0" mnemonicParsing="false" onAction="#choosedStudent" text="Student" textFill="#0b7cc6" />
                   <RadioButton layoutX="124.0" layoutY="390.0" mnemonicParsing="false" text="Parent" textFill="#0b7cc6" />
                   <RadioButton layoutX="245.0" layoutY="390.0" mnemonicParsing="false" text="Teacher" textFill="#0b7cc6" />
                   <Button id="bevel" layoutX="126.0" layoutY="433.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="43.0" prefWidth="88.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Exit" textFill="#487fd9e5" />
+>>>>>>> master
                </children>
             </AnchorPane>
             <ImageView fitHeight="183.0" fitWidth="253.0" layoutX="12.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">

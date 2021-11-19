@@ -9,6 +9,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+<<<<<<< HEAD
+import java.sql.SQLException;
+=======
+>>>>>>> master
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,6 +23,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
+import others.Student;
 
 
 /**
@@ -29,7 +35,11 @@ import javafx.stage.Stage;
 public class SignUp_studentClassController implements Initializable {
 
     @FXML
+<<<<<<< HEAD
+    private TextField email;
+=======
     private TextField idc;
+>>>>>>> master
 
     /**
      * Initializes the controller class.
@@ -39,6 +49,26 @@ public class SignUp_studentClassController implements Initializable {
         // TODO
     }    
      
+<<<<<<< HEAD
+   
+
+    @FXML
+    private void Add(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
+             Connect c= new Connect();
+       Connection con= c.connect_datbade();
+
+                String q="INSERT INTO studentclass (student_id,class_id)\n" +
+"VALUES (?,?)";
+          PreparedStatement rs =con.prepareStatement(q);
+            
+            rs.setInt(1,Student.id);
+             rs.setInt(2,Integer.parseInt(email.getText()));
+            rs.executeUpdate(); 
+            
+            JOptionPane.showMessageDialog(null, "Added Successfuly ");
+                    
+                
+=======
      @FXML
     private void Add (ActionEvent event) throws Exception{
         
@@ -66,13 +96,17 @@ public class SignUp_studentClassController implements Initializable {
       
       
         
+>>>>>>> master
         
         
         
     }
-     @FXML
-    private void back(ActionEvent event){
-         try {
+
+    @FXML
+    private void back(ActionEvent event) {
+        
+        
+             try {
                 Stage stage = new Stage();
                Parent root;
         
@@ -86,6 +120,5 @@ public class SignUp_studentClassController implements Initializable {
 catch (IOException ex) {
            
         } 
-        
     }
 }

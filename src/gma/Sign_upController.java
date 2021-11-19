@@ -5,16 +5,29 @@
  */
 package gma;
 
+import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
+<<<<<<< HEAD
+import others.Student;
+
+=======
 import gma.StudentCLass;
 import java.io.IOException;
 import java.sql.Connection;
@@ -25,6 +38,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.RadioButton;
 import javafx.scene.input.MouseEvent;
+>>>>>>> master
 /**
  * FXML Controller class
  *
@@ -45,7 +59,11 @@ public class Sign_upController implements Initializable {
     @FXML 
     private TextField id;
     @FXML
+<<<<<<< HEAD
+    private RadioButton student;
+=======
     private RadioButton studentButton;
+>>>>>>> master
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -60,6 +78,37 @@ public class Sign_upController implements Initializable {
 }
     }
 
+<<<<<<< HEAD
+    @FXML
+    private void student_choosed(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
+        
+        if(student.isSelected()){
+          Connect c= new Connect();
+       Connection con= c.connect_datbade();
+
+        
+          Student s= new   Student(FullName.getText(),email.getText(),pass.getText(),Integer.parseInt(id.getText()));
+          System.out.print("helo");
+            try {
+                
+                
+                
+                
+                String q="INSERT INTO student (id_s,name_s,Email, password,id_maneger)\n" +
+"VALUES (?,?,?,?,?)";
+          PreparedStatement rs =con.prepareStatement(q);
+            
+            rs.setInt(1,Integer.parseInt(id.getText()));
+           rs.setString(2,FullName.getText());
+            rs.setString(3,email.getText());
+            rs.setString(4,pass.getText());
+            rs.setInt(5,4);
+            rs.executeUpdate(); 
+                
+                
+                
+         
+=======
 
 
     @FXML
@@ -71,6 +120,7 @@ public class Sign_upController implements Initializable {
              StudentCLass c= new  StudentCLass(Integer.parseInt(id.getText()),FullName.getText(),email.getText(),pass.getText());
         
         try {
+>>>>>>> master
                 Stage stage = new Stage();
                Parent root;
         
@@ -78,6 +128,32 @@ public class Sign_upController implements Initializable {
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);
+<<<<<<< HEAD
+              
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            } 
+catch (IOException ex) {
+           
+        } 
+            
+        
+        
+        
+        
+        }
+        
+        
+=======
                stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();} 
 catch (IOException ex) {
@@ -111,6 +187,7 @@ catch (IOException ex) {
         
         
         }
+>>>>>>> master
         
     }
     

@@ -49,7 +49,11 @@
             <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
          </image>
       </ImageView>
+<<<<<<< HEAD
+      <Button layoutX="292.0" layoutY="415.0" mnemonicParsing="false" onAction="#signin" prefHeight="45.0" prefWidth="307.0" style="-fx-background-color: #FFFF32;" text="Sign in" textFill="#265375">
+=======
       <Button fx:id="signinbutt" layoutX="292.0" layoutY="415.0" mnemonicParsing="false" onAction="#SignInAction" prefHeight="45.0" prefWidth="307.0" style="-fx-background-color: #FFFF32;" text="Sign in" textFill="#265375">
+>>>>>>> master
          <font>
             <Font size="21.0" />
          </font>
