@@ -102,13 +102,7 @@ public class Sign_inController implements Initializable {
       }
       
       else{
-      
- int c1 =JOptionPane.showConfirmDialog(null, "Are you sure?", "WARNING", JOptionPane.YES_NO_OPTION);
-    if (c1 == JOptionPane.YES_OPTION) {
-    ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();  
-} else {
-    
-}      
+      JOptionPane.showMessageDialog(null, "Please try Again");
       
       
       }
