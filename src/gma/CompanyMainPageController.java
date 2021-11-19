@@ -6,8 +6,13 @@
 package gma;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
+import static javafx.application.ConditionalFeature.FXML;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -15,7 +20,8 @@ import javafx.fxml.Initializable;
  * @author USER
  */
 public class CompanyMainPageController implements Initializable {
-
+    
+    
     /**
      * Initializes the controller class.
      */
@@ -23,5 +29,7 @@ public class CompanyMainPageController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+
     
 }
