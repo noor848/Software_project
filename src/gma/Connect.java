@@ -24,16 +24,8 @@ public class Connect {
                 
 
     conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gma","root","");
-=======
-    public  static Connection connect_datbade() throws ClassNotFoundException, InstantiationException, IllegalAccessException{
-                Class.forName("com.mysql.cj.jdbc.Driver");
-                
 
-    conn = DriverManager.getConnection("jdbc:mysql://localhost/phpmyadmin/index.php?route=/database/structure&server=1&db=gma","root","");
 
-    // Do something with the Connection
-    System.out.println("connected to database");
-    
   
     return conn;
 

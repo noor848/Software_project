@@ -7,7 +7,11 @@ package gma;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -16,6 +20,11 @@ import javafx.fxml.Initializable;
  */
 public class CompanySignInPageController implements Initializable {
 
+    @FXML
+    private TextField email;
+    @FXML
+    private PasswordField pass;
+
     /**
      * Initializes the controller class.
      */
@@ -23,5 +32,12 @@ public class CompanySignInPageController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void signin(ActionEvent event) {
+        System.out.print("hello");
+        
+        
+    }
     
 }

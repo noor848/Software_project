@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="814.0" style="-fx-background-color: #61979b;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gma.CompanySignInPageController">
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="814.0" style="-fx-background-color: #61979b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.CompanySignInPageController">
    <children>
       <ImageView fitHeight="32.0" fitWidth="19.0" layoutX="134.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -39,7 +38,7 @@
             <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
          </image>
       </ImageView>
-      <Button layoutX="292.0" layoutY="415.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="307.0" style="-fx-background-color: #FFFF32;" text="Sign in" textFill="#265375">
+      <Button layoutX="292.0" layoutY="415.0" mnemonicParsing="false" onAction="#signin" prefHeight="45.0" prefWidth="307.0" style="-fx-background-color: #FFFF32;" text="Sign in" textFill="#265375">
          <font>
             <Font size="21.0" />
          </font>

@@ -57,8 +57,7 @@ public class Sign_inController implements Initializable {
 
        Connect c= new Connect();
        Connection con= c.connect_datbade();
-=======
-       Connection con= Connect.connect_datbade();
+
 
         
         String email1=email.getText();
@@ -73,8 +72,11 @@ public class Sign_inController implements Initializable {
        
                 System.out.println(rs.getString(1));
        
-                       
-                
+                       if(email1.equalsIgnoreCase(rs.getString("Email"))&&password1.equals(rs.getString("password")))
+                       {
+                       flag=1;
+                       break;
+                       }
       }
       
       
