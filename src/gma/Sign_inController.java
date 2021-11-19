@@ -61,14 +61,8 @@ public class Sign_inController implements Initializable {
         
 
        Connect c=new Connect();
+ 
        Connection con= c.connect_datbade();
-=======
-       
-
-       Connect c= new Connect();
-       Connection con= c.connect_datbade();
-=======
-       Connection con= Connect.connect_datbade();
 
 
         
@@ -125,13 +119,8 @@ catch (IOException ex) {
       
       else{
       
- int c1 =JOptionPane.showConfirmDialog(null, "Are you sure?", "WARNING", JOptionPane.YES_NO_OPTION);
-    if (c1 == JOptionPane.YES_OPTION) {
-    ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();  
-} else {
-    
-}      
-      
+JOptionPane.showMessageDialog(null, "Please try Again !");
+     
       
       }
       
