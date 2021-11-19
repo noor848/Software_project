@@ -59,6 +59,9 @@
             <Image url="@../img/3073443.png" />
          </image>
       </ImageView>
-      <Label layoutX="260.0" layoutY="230.0" prefHeight="21.0" prefWidth="325.0" textFill="RED" />
+      <Label fx:id="LabelError" layoutX="277.0" layoutY="223.0" prefHeight="21.0" prefWidth="325.0" textFill="#790606">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
    </children>
 </AnchorPane>
