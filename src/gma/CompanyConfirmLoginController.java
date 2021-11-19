@@ -5,9 +5,18 @@
  */
 package gma;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -16,12 +25,68 @@ import javafx.fxml.Initializable;
  */
 public class CompanyConfirmLoginController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+
+    @FXML
+    private TextField CodeConfirm;
+    
+    //The confirmCode need to be git from what the email send.. not lilke this.
+    String confCode ="0000";
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+
+
+
+    }   
+    
+        @FXML
+        private void ConfirmAction(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, Exception {
+        
+              if(CodeConfirm.getText().equals(confCode)){
+            
+              try {
+               Stage stage = new Stage();
+               Parent root;
+        
+               root = FXMLLoader.load(getClass().getResource("CompanyMainPage.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.setTitle("Company Main Page");
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+            } 
+            catch (IOException ex) {
+            
+                    }
+            
+              }
+        }
+        
+        @FXML
+        private void BackAction(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, Exception {
+            
+            // any way to retrave prv. page? 
+            
+                          try {
+               Stage stage = new Stage();
+               Parent root;
+        
+               root = FXMLLoader.load(getClass().getResource("CompanySignInPage.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.setTitle("Company Sign in Page");
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+            } 
+            catch (IOException ex) {
+            
+                    }
+            
+        
+        }
+
+
     
 }
