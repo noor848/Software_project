@@ -9,7 +9,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+<<<<<<< HEAD
 import java.sql.SQLException;
+=======
+>>>>>>> master
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,6 +26,7 @@ import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 import others.Student;
 
+
 /**
  * FXML Controller class
  *
@@ -31,7 +35,11 @@ import others.Student;
 public class SignUp_studentClassController implements Initializable {
 
     @FXML
+<<<<<<< HEAD
     private TextField email;
+=======
+    private TextField idc;
+>>>>>>> master
 
     /**
      * Initializes the controller class.
@@ -41,6 +49,7 @@ public class SignUp_studentClassController implements Initializable {
         // TODO
     }    
      
+<<<<<<< HEAD
    
 
     @FXML
@@ -59,6 +68,35 @@ public class SignUp_studentClassController implements Initializable {
             JOptionPane.showMessageDialog(null, "Added Successfuly ");
                     
                 
+=======
+     @FXML
+    private void Add (ActionEvent event) throws Exception{
+        
+      
+       
+       Connect c=new Connect();
+ 
+       Connection con= c.connect_datbade();
+       
+     
+         String query1 = " insert into studentclass(student_id,class_id)"
+        + " values (?, ?)";
+
+      // create the mysql insert preparedstatement
+      PreparedStatement preparedStmt2 = con.prepareStatement(query1);
+      System.out.print(StudentCLass.id);
+      preparedStmt2.setInt(1,StudentCLass.id);
+      preparedStmt2.setInt(2,Integer.parseInt(idc.getText()));
+  
+      preparedStmt2.execute();
+      
+      
+      
+      
+      
+      
+        
+>>>>>>> master
         
         
         

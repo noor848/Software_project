@@ -15,7 +15,7 @@
             <Image url="@../img/icegif-497.gif" />
          </image>
       </ImageView>
-      <TextField fx:id="email" layoutX="246.0" layoutY="96.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter Class ID" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="idc" layoutX="246.0" layoutY="96.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter Class ID" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
       <Label layoutX="166.0" layoutY="101.0" prefHeight="21.0" prefWidth="120.0" text="Class ID" textFill="#0b7cc6f2">
          <font>
             <Font name="Californian FB" size="19.0" />

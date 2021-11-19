@@ -24,8 +24,21 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
+<<<<<<< HEAD
 import others.Student;
 
+=======
+import gma.StudentCLass;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
+import javafx.scene.input.MouseEvent;
+>>>>>>> master
 /**
  * FXML Controller class
  *
@@ -46,7 +59,11 @@ public class Sign_upController implements Initializable {
     @FXML 
     private TextField id;
     @FXML
+<<<<<<< HEAD
     private RadioButton student;
+=======
+    private RadioButton studentButton;
+>>>>>>> master
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -61,6 +78,7 @@ public class Sign_upController implements Initializable {
 }
     }
 
+<<<<<<< HEAD
     @FXML
     private void student_choosed(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
         
@@ -90,6 +108,19 @@ public class Sign_upController implements Initializable {
                 
                 
          
+=======
+
+
+    @FXML
+    private void choosedStudent(ActionEvent event) throws Exception {
+        
+        
+        if(studentButton.isSelected()){
+            System.out.print("hello");
+             StudentCLass c= new  StudentCLass(Integer.parseInt(id.getText()),FullName.getText(),email.getText(),pass.getText());
+        
+        try {
+>>>>>>> master
                 Stage stage = new Stage();
                Parent root;
         
@@ -97,6 +128,7 @@ public class Sign_upController implements Initializable {
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);
+<<<<<<< HEAD
               
                stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();
@@ -121,6 +153,41 @@ catch (IOException ex) {
         }
         
         
+=======
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();} 
+catch (IOException ex) {
+            
+        } 
+        
+        
+        
+         Connect c1=new Connect();
+ 
+       Connection con= c1.connect_datbade();
+       
+       
+       
+          String query = " insert into student(id_s,name_s,Email,password,id_maneger)"
+        + " values (?,?,?,?,?)";
+
+      // create the mysql insert preparedstatement
+      PreparedStatement preparedStmt = con.prepareStatement(query);
+      System.out.print(StudentCLass.id);
+      preparedStmt.setInt(1,StudentCLass.id);
+      preparedStmt.setString(2,StudentCLass.name);
+       preparedStmt.setString(3,StudentCLass.email);
+        preparedStmt.setString(4,StudentCLass.password);
+         preparedStmt.setInt(5,4);
+  
+      preparedStmt.execute();
+       
+       
+        
+        
+        
+        }
+>>>>>>> master
         
     }
     

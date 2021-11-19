@@ -18,10 +18,14 @@ public class Connect {
     
     Connection conn = null;
   
- 
-    public   Connection connect_datbade() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException{
+
+    
+    public   Connection connect_datbade() throws Exception{
                 Class.forName("com.mysql.jdbc.Driver");
                 
+
+   
+      
 
     conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gma","root","");
 
@@ -37,8 +41,7 @@ public class Connect {
 }
     
     }
-    
-    
+
     
     
     

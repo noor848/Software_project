@@ -31,24 +31,24 @@
                </image>
             </ImageView>
             <Button layoutX="171.0" layoutY="386.0" mnemonicParsing="false" onAction="#back_butt" prefHeight="61.0" prefWidth="193.0" styleClass="shiny" stylesheets="@mystyle.css" text="Back" textFill="#477fdae5" />
-            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="-28.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="-28.0" layoutY="396.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/20647425811537355420-64.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="184.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="184.0" layoutY="396.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/14787197661582004498-128.png" />
                </image>
             </ImageView>
             <TextField fx:id="email1" layoutX="149.0" layoutY="250.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter Teacher Name" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <Label layoutX="29.0" layoutY="255.0" prefHeight="21.0" prefWidth="120.0" text="Teacher Name" textFill="#0b7cc6f2">
+            <Label layoutX="29.0" layoutY="255.0" prefHeight="21.0" prefWidth="120.0" text="Subject ID" textFill="#0b7cc6f2">
                <font>
                   <Font name="Californian FB" size="19.0" />
                </font>
             </Label>
             <TextField fx:id="email11" layoutX="149.0" layoutY="316.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter Teacher ID" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <Label layoutX="29.0" layoutY="321.0" prefHeight="21.0" prefWidth="120.0" text="Teacher ID" textFill="#0b7cc6f2">
+            <Label layoutX="29.0" layoutY="321.0" prefHeight="21.0" prefWidth="120.0" text="Class ID" textFill="#0b7cc6f2">
                <font>
                   <Font name="Californian FB" size="19.0" />
                </font>
