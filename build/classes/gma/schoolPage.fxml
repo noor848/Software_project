@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="600.0" styleClass="parent" stylesheets="@mystyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.SchoolPageController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="572.0" prefWidth="1023.0" styleClass="parent" stylesheets="@mystyle.css">
+         <children>
+            <Pane layoutX="22.0" layoutY="106.0" prefHeight="430.0" prefWidth="997.0" styleClass="pane" stylesheets="@mystyle.css">
+               <children>
+                  <Label layoutX="21.0" layoutY="67.0" prefHeight="62.0" prefWidth="301.0" styleClass="font" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Teachers &amp; Student Sign UP">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="127.0" prefHeight="175.0" prefWidth="278.0" styleClass="font2" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="GMA is an information management system for educational institutions to manage all student's data. It provides abilities such as registration of students in classes, documenting of grades and analytical marks of each student and other evaluation elements" wrapText="true" />
+                  <Button layoutX="29.0" layoutY="318.0" mnemonicParsing="false" onAction="#open_signup" prefHeight="42.0" prefWidth="107.0" styleClass="buttons2" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Sign up" />
+                  <Label layoutX="782.0" layoutY="50.0" prefHeight="32.0" prefWidth="202.0" styleClass="font" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Sign in">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="697.0" layoutY="98.0" prefHeight="211.0" prefWidth="278.0" text="GMA is an information management system for educational institutions to manage all student's data. It provides abilities such as registration of students in classes, documenting of grades and analytical marks of each student and other evaluation elements" wrapText="true">
+                     <font>
+                        <Font name="Book Antiqua" size="16.0" />
+                     </font></Label>
+                  <Button layoutX="782.0" layoutY="318.0" mnemonicParsing="false" onAction="#open_signin" prefHeight="42.0" prefWidth="107.0" styleClass="buttons2" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Sign In" />
+                  <VBox id="vbox" fx:id="vbox" layoutX="7.0" layoutY="-66.0" prefHeight="500.0" prefWidth="663.0" styleClass="vbox" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
