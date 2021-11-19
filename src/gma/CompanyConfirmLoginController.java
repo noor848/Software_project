@@ -57,7 +57,7 @@ public class CompanyConfirmLoginController implements Initializable {
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);
-               stage.setTitle("confirm page");
+               stage.setTitle("Main page");
                stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();
               }
