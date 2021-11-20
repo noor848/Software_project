@@ -18,7 +18,7 @@
                   <Font name="Bookman Old Style Bold" size="24.0" />
                </font>
             </Label>
-            <Button alignment="BASELINE_RIGHT" layoutX="20.0" layoutY="555.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="95.0" style="-fx-background-color: #62989c;" text="Back" textFill="#265375">
+            <Button alignment="BASELINE_RIGHT" layoutX="20.0" layoutY="555.0" mnemonicParsing="false" onAction="#BackAction" prefHeight="43.0" prefWidth="95.0" style="-fx-background-color: #62989c;" text="Back" textFill="#265375">
                <font>
                   <Font size="19.0" />
                </font>

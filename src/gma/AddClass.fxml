@@ -8,12 +8,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.AddClassController">
    <children>
       <AnchorPane layoutX="291.0" layoutY="11.0" prefHeight="500.0" prefWidth="390.0">
          <children>
             <TextField fx:id="email" layoutX="124.0" layoutY="207.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter Class Name" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <Button layoutX="-84.0" layoutY="377.0" mnemonicParsing="false" onAction="#loginButt" prefHeight="61.0" prefWidth="196.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add" textFill="#477fdae5" />
+            <Button layoutX="-84.0" layoutY="377.0" mnemonicParsing="false"  prefHeight="61.0" prefWidth="196.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add" textFill="#477fdae5" />
             <Label layoutX="53.0" layoutY="213.0" prefHeight="21.0" prefWidth="120.0" text="Class " textFill="#0b7cc6f2">
                <font>
                   <Font name="Californian FB" size="19.0" />
@@ -24,7 +24,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="124.0" layoutY="436.0" onMouseDragEntered="#forgot_butt" textFill="#0c7ec4" />
+            <Label layoutX="124.0" layoutY="436.0"  textFill="#0c7ec4" />
             <ImageView fitHeight="54.0" fitWidth="159.0" layoutX="-27.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/50949620_373112316802174_191790437457985536_n.gif" />
@@ -35,7 +35,7 @@
                   <Image url="@../img/13764952091536837650-128.png" />
                </image>
             </ImageView>
-            <Button layoutX="138.0" layoutY="377.0" mnemonicParsing="false" onAction="#back_butt" prefHeight="61.0" prefWidth="196.0" styleClass="shiny" stylesheets="@mystyle.css" text="Back" textFill="#477fdae5" />
+            <Button layoutX="138.0" layoutY="377.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="196.0" styleClass="shiny" stylesheets="@mystyle.css" text="Back" textFill="#477fdae5" />
             <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="-69.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/20647425811537355420-64.png" />

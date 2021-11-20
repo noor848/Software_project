@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USER/Desktop/GA/Software_project/src/gma/SignUp_parentController.java</file>
             <file>file:/C:/Users/USER/Desktop/GA/Software_project/src/gma/GMACompany.java</file>
             <file>file:/C:/Users/USER/Desktop/GA/Software_project/src/gma/CompanyMainPageController.java</file>
-            <file>file:/C:/Users/USER/Desktop/GA/Software_project/src/gma/AddSubController.java</file>
+            <file>file:/C:/Users/USER/Desktop/GA/Software_project/src/gma/AddSubjectNewController.java</file>
+            <file>file:/C:/Users/USER/Desktop/GA/Software_project/src/gma/Sign_inController.java</file>
         </group>
     </open-files>
 </project-private>

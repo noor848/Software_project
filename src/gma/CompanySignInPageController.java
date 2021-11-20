@@ -44,9 +44,9 @@ public class CompanySignInPageController implements Initializable {
     
 
     
-    public static String defMail= "cc";
+    public static String defMail= "comp@gmail.com";
 
-    public static String defPass= "22";
+    public static String defPass= "123456";
     
     
     @Override
