@@ -32,3 +32,14 @@ Burndown: https://www.burndownfortrello.com/?fbclid=IwAR0tPwxvJiLMRGHNBlcKtIo9yG
 impediment that we faced and solution  :
 1- netbeans (IDE tools) not working -- solved by downloading older version and older JDK.
 2- lack of skills in database concepts and javafx package usage ---get help from skilled member.
+
+
+
+Daily scrum :
+![image](https://user-images.githubusercontent.com/54281955/142742166-7869c893-3f3c-4b20-a79e-502de738421c.png)
+![image](https://user-images.githubusercontent.com/54281955/142742185-f12ab0a2-4b52-45b0-8c04-40078f1f6a04.png)
+Pair Programming:
+![image](https://user-images.githubusercontent.com/54281955/142742250-c8b258b2-b498-47c4-8919-d90ad4bae4ed.png)
+
+
+
