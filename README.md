@@ -27,3 +27,8 @@ Stakeholder:
 
 
 Burndown: https://www.burndownfortrello.com/?fbclid=IwAR0tPwxvJiLMRGHNBlcKtIo9yGP6AMD0Qjc4eF90w9clInL3qd6cfvQO_4s
+
+
+impediment that we faced and solution  :
+1- netbeans (IDE tools) not working -- solved by downloading older version and older JDK.
+2- lack of skills in database concepts and javafx package usage ---get help from skilled member.
