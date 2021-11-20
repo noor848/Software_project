@@ -39,7 +39,8 @@ Daily scrum :
 ![image](https://user-images.githubusercontent.com/54281955/142742166-7869c893-3f3c-4b20-a79e-502de738421c.png)
 ![image](https://user-images.githubusercontent.com/54281955/142742185-f12ab0a2-4b52-45b0-8c04-40078f1f6a04.png)
 Pair Programming:
-![image](https://user-images.githubusercontent.com/54281955/142742250-c8b258b2-b498-47c4-8919-d90ad4bae4ed.png)
+![image](https://user-images.githubusercontent.com/54281955/142742322-d7c75e41-1268-48f3-bf1e-24c7c9775cd6.png)
+
 
 
 
