@@ -6,6 +6,7 @@
 package gma;
 
 import com.sun.javafx.application.LauncherImpl;
+import static gma.CompanyConfirmLoginController.x;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.application.Preloader;
@@ -44,7 +45,21 @@ public class GMA extends Application {
     
     @Override
     public void start(Stage stage) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-       Parent root = FXMLLoader.load(getClass().getResource("schoolPage.fxml"));
+        
+               Parent root;
+        
+               root = FXMLLoader.load(getClass().getResource("Stu_Or_Tea_Or_Par.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.setTitle("Welcome to GMA");
+               stage.show();
+               
+            
+      
+        
+     }
+     /*  Parent root = FXMLLoader.load(getClass().getResource("schoolPage.fxml"));
         //String css = GMA.class.getResource("mystyle.css").toExternalForm();
        /// scene.getStylesheets().add(css);
 
@@ -54,9 +69,9 @@ public class GMA extends Application {
                  stage.initStyle(StageStyle.TRANSPARENT);
                stage.setTitle("Doctor profile");
                stage.show();
-                System.out.print("hello world");
+                System.out.print("hello world");*/
       
-    }
+    
 
     /**
      * @param args the command line arguments
