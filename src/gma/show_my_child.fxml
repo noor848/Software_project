@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="677.0" style="-fx-background-color: E8F3FB;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.Show_my_childController">
+    <stylesheets>
+        <URL value="@flight.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tablef" layoutX="14.0" layoutY="102.0" prefHeight="254.0" prefWidth="655.0">
+        <columns>
+          <TableColumn fx:id="id_student" prefWidth="188.0" text="id_student" />
+            <TableColumn fx:id="name" prefWidth="122.0" text="Name" />
+            <TableColumn fx:id="name_sub" prefWidth="93.0" text="Subject name" />
+            <TableColumn fx:id="grade" prefWidth="123.0" text="Grade" />
+            <TableColumn fx:id="class1" prefWidth="94.0" text="class" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="183.0" layoutY="61.0" prefHeight="25.0" prefWidth="197.0" />
+      <Label layoutX="86.0" layoutY="64.0" prefHeight="20.0" prefWidth="74.0" style="-fx-font-weight: bold; -fx-font-size: 14px;" text="Search_id" />
+   </children>
+</AnchorPane>

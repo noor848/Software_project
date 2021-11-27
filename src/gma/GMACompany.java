@@ -30,7 +30,7 @@ public class GMACompany extends Application {
     public void start(Stage primaryStage) throws Exception{
        Stage stg = primaryStage;
         primaryStage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("CompanySignInPage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("show_my_child.fxml"));
         stg.setTitle("Company Sign in Page");
         stg.setScene(new Scene(root));
         stg.show();
