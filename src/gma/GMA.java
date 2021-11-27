@@ -6,7 +6,6 @@
 package gma;
 
 import com.sun.javafx.application.LauncherImpl;
-import static gma.CompanyConfirmLoginController.x;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.application.Preloader;
