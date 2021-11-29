@@ -47,7 +47,7 @@ public class GMA extends Application {
         
                Parent root;
         
-               root = FXMLLoader.load(getClass().getResource("Stu_Or_Tea_Or_Par.fxml"));
+               root = FXMLLoader.load(getClass().getResource("show_my_child.fxml"));
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);

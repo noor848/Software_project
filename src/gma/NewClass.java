@@ -5,32 +5,21 @@
  */
 package gma;
 
-import java.io.IOException;
-import javafx.application.Application;
-import static javafx.application.Application.*;
+import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 /**
  *
- * @author USER
+ * @author Noor
  */
-public class GMACompany extends Application {
-    
-   // private static Stage stg;
-    
-
-     // private Stage stg;
-
-    @Override
+public class NewClass {
     public void start(Stage primaryStage) throws Exception{
        Stage stg = primaryStage;
         primaryStage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("show_my_child_2.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("show_my_child.fxml"));
         stg.setTitle("Company Sign in Page");
         stg.setScene(new Scene(root));
         stg.show();
@@ -40,6 +29,5 @@ public class GMACompany extends Application {
     public static void main(String[] args){
         launch (args);
     }
-    
     
 }

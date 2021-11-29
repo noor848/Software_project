@@ -11,11 +11,11 @@ package gma;
  */
 public class ParentSee {
     
-   static  String nameSubject;
-   static  int grade;
-   static int studentId;
- static   String studentName;
-   static int classId;
+     String nameSubject;
+     int grade;
+    int studentId;
+    String studentName;
+    int classId;
    
    
    public ParentSee(String nameSubject,int grade,int studentId,String studentName,int classId){
@@ -63,7 +63,7 @@ public class ParentSee {
         return grade;
     }
 
-    static public   int studentId() {
+     public   int studentId() {
         return studentId;
     }
 

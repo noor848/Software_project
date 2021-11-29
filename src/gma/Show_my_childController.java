@@ -13,9 +13,10 @@ import java.util.logging.Logger;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
+
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -41,36 +42,53 @@ public class Show_my_childController implements Initializable {
     @FXML
     private TableColumn<ParentSee, Integer > grade;
 
-    /**
-     * Initializes the controller class.
-     */
-    
+   
      ObservableList<ParentSee> listM;
      ObservableList<ParentSee> dataList;
        int index = -1;
+       
+       
+       
+       
     @FXML
     private TableColumn<ParentSee, Integer> class1;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-        
-        
-        
-      
-        id_student.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("studentId"));
-         name.setCellValueFactory(new PropertyValueFactory<ParentSee,String>("studentName"));
-          name_sub.setCellValueFactory(new PropertyValueFactory<ParentSee,String>("nameSubject"));
-           grade.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("grade"));
-            class1.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("classId"));
-           
+        try {
+            // TODO
+            listM = sqlconnect.getData();
+        } catch (SQLException ex) {
+            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
+           
+        
+      tablef.setItems(listM);
+                try {
+             listM = sqlconnect.getData();
+                       
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+     
+      tablef.setItems(listM);
         
         
          try {
           // TODO
-       search_user();
+         search_user();
       } catch (ClassNotFoundException ex) {
+          Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
+      } catch (SQLException ex) {
           Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
       } catch (Exception ex) {
             Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
@@ -82,33 +100,48 @@ public class Show_my_childController implements Initializable {
     
     
 void search_user() throws ClassNotFoundException, SQLException, Exception {  
-    
+
+
         id_student.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("studentId"));
          name.setCellValueFactory(new PropertyValueFactory<ParentSee,String>("studentName"));
           name_sub.setCellValueFactory(new PropertyValueFactory<ParentSee,String>("nameSubject"));
            grade.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("grade"));
             class1.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("classId"));
            
-
-        dataList = sqlconnect.getData();
+       dataList = sqlconnect.getData();
         tablef.setItems(dataList);
-        FilteredList<ParentSee> filteredData = new FilteredList<>(dataList, b -> true);  
+        
+     FilteredList<ParentSee> filteredData = new FilteredList<>(dataList, b -> true);  
  search.textProperty().addListener((observable, oldValue, newValue) -> {
  filteredData.setPredicate(person -> {
     if (newValue == null || newValue.isEmpty()) {
      return true;
     }    
-    String lowerCaseFilter = newValue;
+      String lowerCaseFilter = newValue;
     
-  if (String.valueOf(ParentSee.studentId()).contains(lowerCaseFilter))
-         return true;// Filter matches email
-                                            
+    if (person.nameSubject.toLowerCase().contains(lowerCaseFilter) ) {
+     return true; // Filter matches username
+    } else if (person.studentName.toLowerCase().contains(lowerCaseFilter)) {
+     return true; // Filter matches password
+    }
+else if (String.valueOf(person.grade()).contains(lowerCaseFilter))return true;    
+else if (String.valueOf(person.classId()).contains(lowerCaseFilter))return true;     
+else if (String.valueOf(person.studentId()).contains(lowerCaseFilter))return true;     
          else  
-          return false; // Does not match.
+          return false; // es not match.
    });
   });  
   SortedList<ParentSee> sortedData = new SortedList<>(filteredData);  
   sortedData.comparatorProperty().bind(tablef.comparatorProperty());  
-  tablef.setItems(sortedData);      
+  tablef.setItems(sortedData); 
+        
+     
+       
+        
+    }
+
+    @FXML
+    private void search(ActionEvent event) throws SQLException, Exception {
+           search_user();
     }
 }
