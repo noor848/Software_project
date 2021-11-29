@@ -5,13 +5,12 @@
  */
 package gma;
 
-import static java.lang.Integer.parseInt;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import static java.util.Collections.list;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -36,7 +35,7 @@ public class sqlconnect {
 
 
     // Do something with the Connection
-    System.out.println("connected to database");
+    System.out.println("connected to database 11111");
     
   
     return conn;
@@ -52,7 +51,7 @@ public class sqlconnect {
         
         
        Connect c=new Connect();
- 
+       
        Connection con= c.connect_datbade();
        
         ObservableList<ParentSee> list = FXCollections.observableArrayList();
@@ -71,8 +70,8 @@ public class sqlconnect {
             ResultSet rs = ps.executeQuery();
             
             while (rs.next()){  
-              
-                list.add(new ParentSee(rs.getString("name"),rs.getInt("grade"), rs.getInt("id_s"), rs.getString("name_s"),rs.getInt("id")));               
+              System.out.print(rs.getString("name"));
+                list.add(new ParentSee(rs.getString("name_s"),rs.getInt("grade"), rs.getInt("id_s"),rs.getString("name") ,rs.getInt("id")));               
                    }
         } catch (Exception e) {
         }
