@@ -6,16 +6,24 @@
 package gma;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.ListView;
 
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -30,118 +38,71 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class Show_my_childController implements Initializable {
 
     @FXML
-    private TableView<ParentSee> tablef;
-    @FXML
     private TextField search;
     @FXML
-    private TableColumn<ParentSee,Integer> id_student;
+    private TextField classid;
     @FXML
-    private TableColumn<ParentSee,String> name;
+    private TextField studentid;
     @FXML
-    private TableColumn<ParentSee, String> name_sub;
+    private TextField name;
     @FXML
-    private TableColumn<ParentSee, Integer > grade;
+    private ListView  <String>grade1;
+    
+    private TextField subejcet_name;
+    @FXML
+    private Button search_button;
+    @FXML
+    private TextField subject;
 
-   
-     ObservableList<ParentSee> listM;
-     ObservableList<ParentSee> dataList;
-       int index = -1;
-       
-       
-       
-       
-    @FXML
-    private TableColumn<ParentSee, Integer> class1;
+ObservableList  observableList ;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        try {
-            // TODO
-            listM = sqlconnect.getData();
-        } catch (SQLException ex) {
-            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (Exception ex) {
-            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-           
         
-      tablef.setItems(listM);
-                try {
-             listM = sqlconnect.getData();
-                       
-
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (Exception ex) {
-            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-     
-      tablef.setItems(listM);
-        
-        
-         try {
-          // TODO
-         search_user();
-      } catch (ClassNotFoundException ex) {
-          Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
-      } catch (SQLException ex) {
-          Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
-      } catch (Exception ex) {
-            Logger.getLogger(Show_my_childController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }    
     
-    
-    
-    
-void search_user() throws ClassNotFoundException, SQLException, Exception {  
-
-
-        id_student.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("studentId"));
-         name.setCellValueFactory(new PropertyValueFactory<ParentSee,String>("studentName"));
-          name_sub.setCellValueFactory(new PropertyValueFactory<ParentSee,String>("nameSubject"));
-           grade.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("grade"));
-            class1.setCellValueFactory(new PropertyValueFactory<ParentSee,Integer>("classId"));
-           
-       dataList = sqlconnect.getData();
-        tablef.setItems(dataList);
-        
-     FilteredList<ParentSee> filteredData = new FilteredList<>(dataList, b -> true);  
- search.textProperty().addListener((observable, oldValue, newValue) -> {
- filteredData.setPredicate(person -> {
-    if (newValue == null || newValue.isEmpty()) {
-     return true;
-    }    
-      String lowerCaseFilter = newValue;
-    
-    if (person.nameSubject.toLowerCase().contains(lowerCaseFilter) ) {
-     return true; // Filter matches username
-    } else if (person.studentName.toLowerCase().contains(lowerCaseFilter)) {
-     return true; // Filter matches password
-    }
-else if (String.valueOf(person.grade()).contains(lowerCaseFilter))return true;    
-else if (String.valueOf(person.classId()).contains(lowerCaseFilter))return true;     
-else if (String.valueOf(person.studentId()).contains(lowerCaseFilter))return true;     
-         else  
-          return false; // es not match.
-   });
-  });  
-  SortedList<ParentSee> sortedData = new SortedList<>(filteredData);  
-  sortedData.comparatorProperty().bind(tablef.comparatorProperty());  
-  tablef.setItems(sortedData); 
-        
-     
-       
         
     }
+    
+    
+    
+    
 
     @FXML
-    private void search(ActionEvent event) throws SQLException, Exception {
-           search_user();
+    private void search_handle(ActionEvent event) throws Exception {
+        
+          
+       Connect c=new Connect();
+       
+       Connection con= c.connect_datbade();
+        
+                        try {
+         PreparedStatement ps = con.prepareStatement("SELECT\n" +
+"subject.name,grades.grade,student.name_s,student.id_s,class.id from  student\n" +
+"INNER JOIN studentclass ON studentclass.student_id=student.id_s\n" +
+"INNER JOIN class ON studentclass.class_id=class.id\n" +
+"INNER JOIN  subject on subject.class_id=class.id\n" +
+"INNER JOIN grades on grades.id_sub =subject.id  where id_s = ?  ");
+      ps.setInt(1,Integer.parseInt(search.getText())); 
+        // ps.setString(1,subject.getText().trim().toString());
+
+                       Statement statement=con.createStatement( ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+
+            ResultSet rs = ps.executeQuery();
+              rs.absolute(0); //befor and afte first an dlast row
+            while (rs.next()){  
+         classid.setText(Integer.toString(rs.getInt("id"))); 
+           studentid.setText(Integer.toString(rs.getInt("id_s")));  
+           name.setText(rs.getString("name_s"));  
+               subejcet_name.setText(rs.getString("name")); 
+                        grade1.getItems().add("hello");
+                
+                   }
+        } catch (Exception e) {
+            System.out.print(e.getMessage());
+        }
+                        
+            
+        
+      
     }
 }
