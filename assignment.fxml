@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="609.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+   <children>
+      <AnchorPane prefHeight="430.0" prefWidth="610.0" style="-fx-background-color: #c5e0e0;">
+         <children>
+            <Button layoutX="427.0" layoutY="180.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="118.0" text="Add Grades">
+               <font>
+                  <Font name="Javanese Text" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="427.0" layoutY="260.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="118.0" text="Update Assignment">
+               <font>
+                  <Font name="Javanese Text" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="427.0" layoutY="332.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="118.0" text="Delete Assignment">
+               <font>
+                  <Font name="Javanese Text" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="41.0" layoutY="121.0" prefHeight="42.0" prefWidth="242.0" style="-fx-background-color: white;" text="Assignment 1" />
+            <TextArea layoutX="34.0" layoutY="201.0" prefHeight="173.0" prefWidth="254.0" />
+            <ImageView fitHeight="121.0" fitWidth="219.0" layoutX="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Software_project-master/src/img/onlinelogomaker-111321-2108-7977.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
