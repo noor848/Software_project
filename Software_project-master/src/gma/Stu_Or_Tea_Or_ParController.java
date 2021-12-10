@@ -15,48 +15,36 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
  * FXML Controller class
  *
- * @author USER
+ * @author zaytona
  */
-public class Assi implements Initializable {
-
-    @FXML
-    private AnchorPane AnchorPane;
-
+public class Stu_Or_Tea_Or_ParController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
+     @FXML
+    private void school(ActionEvent event) throws Exception {
+        Stage stage = new Stage();
+               Parent root;
+        
+               root = FXMLLoader.load(getClass().getResource("conf_school.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.setTitle("Welcome to GMA");
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
-         @FXML
-        private void AddGrade(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, Exception {
-        
-               try {
-               Stage stage = new Stage();
-               Parent root = FXMLLoader.load(getClass().getResource("grades.fxml"));
-               Scene scene = new Scene(root);  
-               stage.setScene(scene);
-               stage.setTitle("Grades Page");
-               stage.show();
-                ((Node)(event.getSource())).getScene().getWindow().hide();
-            } 
-            catch (IOException ex) {
-                
-                System.out.print("Inside Ass.."+ ex);
-            
-                    }
-            
-        }
-            
-    
-    
+
+   
 }

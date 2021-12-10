@@ -17,10 +17,7 @@ import javax.swing.JOptionPane;
 public class Connect {
     
     Connection conn = null;
-
-
-
-
+  
 
     
     public   Connection connect_datbade() throws Exception{
