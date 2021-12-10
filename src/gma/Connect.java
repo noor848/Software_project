@@ -18,9 +18,7 @@ public class Connect {
     
     Connection conn = null;
 
-    Connect() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+
 
 
 
