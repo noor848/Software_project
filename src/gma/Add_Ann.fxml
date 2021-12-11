@@ -9,12 +9,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.Add_AnnController">
    <children>
       <AnchorPane layoutX="291.0" layoutY="11.0" prefHeight="500.0" prefWidth="390.0">
          <children>
             <TextField fx:id="email" layoutX="77.0" layoutY="147.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter announcement title" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
-            <Button layoutX="-51.0" layoutY="406.0" mnemonicParsing="false" onAction="#loginButt" prefHeight="61.0" prefWidth="190.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add" textFill="#477fdae5" />
+            <Button fx:id="Add_ann" layoutX="-51.0" layoutY="406.0" mnemonicParsing="false" onAction="#Add_ann" prefHeight="61.0" prefWidth="190.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add" textFill="#477fdae5" />
             <Label layoutX="26.0" layoutY="152.0" prefHeight="21.0" prefWidth="120.0" text="Title" textFill="#0b7cc6f2">
                <font>
                   <Font name="Californian FB" size="19.0" />
@@ -47,7 +47,7 @@
                   <Font name="Bernard MT Condensed" size="63.0" />
                </font>
             </Label>
-            <TextArea layoutX="70.0" layoutY="189.0" prefHeight="200.0" prefWidth="272.0" promptText="Enter announcement" />
+            <TextArea fx:id="text_area" layoutX="70.0" layoutY="189.0" prefHeight="200.0" prefWidth="272.0" promptText="Enter announcement" />
          </children>
       </AnchorPane>
       <ImageView fitHeight="230.0" fitWidth="271.0" layoutX="24.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
