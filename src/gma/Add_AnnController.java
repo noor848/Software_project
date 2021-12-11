@@ -60,15 +60,20 @@ public class Add_AnnController implements Initializable {
 
     @FXML
     void back_butt(ActionEvent event) throws IOException{
-        Stage stage = new Stage();
+               try {
+                Stage stage = new Stage();
                Parent root;
         
             root = FXMLLoader.load(getClass().getResource("Admin.fxml"));
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);
+               stage.setTitle("Admin profile");
                stage.show();
-                ((Node)(event.getSource())).getScene().getWindow().hide();}
+                ((Node)(event.getSource())).getScene().getWindow().hide();} 
+catch (IOException ex) {
+            
+        }}
 
     
 

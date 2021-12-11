@@ -10,8 +10,8 @@
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="814.0" style="-fx-background-color: #c5e0e0;">
          <children>
-            <Button layoutX="229.0" layoutY="296.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add announcement" />
-            <Button layoutX="519.0" layoutY="297.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Change My Password" />
+            <Button layoutX="229.0" layoutY="296.0" mnemonicParsing="false" onAction="#add_announce" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add announcement" />
+            <Button layoutX="519.0" layoutY="297.0" mnemonicParsing="false" onAction="#chang_pass" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Change My Password" />
             <ImageView fitHeight="140.0" fitWidth="306.0" layoutX="352.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
@@ -42,8 +42,8 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <Button layoutX="229.0" layoutY="230.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add Class" />
-            <Button layoutX="519.0" layoutY="231.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" text="Add subject">
+            <Button layoutX="229.0" layoutY="230.0" mnemonicParsing="false" onAction="#add_class" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" stylesheets="@mystyle.css" text="Add Class" />
+            <Button layoutX="519.0" layoutY="231.0" mnemonicParsing="false" onAction="#add_sub" prefHeight="50.0" prefWidth="266.0" styleClass="shiny" text="Add subject">
                <stylesheets>
                   <URL value="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" />
                   <URL value="@mystyle.css" />

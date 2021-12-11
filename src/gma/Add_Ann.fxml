@@ -48,6 +48,7 @@
                </font>
             </Label>
             <TextArea fx:id="text_area" layoutX="70.0" layoutY="189.0" prefHeight="200.0" prefWidth="272.0" promptText="Enter announcement" />
+            <Button layoutX="181.0" layoutY="416.0" mnemonicParsing="false" onAction="#back_butt" prefHeight="61.0" prefWidth="190.0" styleClass="shiny" stylesheets="@mystyle.css" text="Back" textFill="#477fdae5" />
          </children>
       </AnchorPane>
       <ImageView fitHeight="230.0" fitWidth="271.0" layoutX="24.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">

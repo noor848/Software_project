@@ -50,8 +50,7 @@ public class Parent_sign_inController implements Initializable {
       @FXML
     private void loginButt(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException, Exception {
         
-
-       Connect c=new Connect();
+      Connect c=new Connect();
  
        Connection con= c.connect_datbade();
 
@@ -66,7 +65,9 @@ public class Parent_sign_inController implements Initializable {
               ResultSet rs=statement.executeQuery(q);
           rs.absolute(0); //befor and afte first an dlast row
       while (rs.next()) {
-       
+       System.out.print(rs.getString("Email"));
+       System.out.print(rs.getString(email1
+       ));
               if(email1.equalsIgnoreCase(rs.getString("Email"))&&password1.equals(rs.getString("password")))
        
               {
@@ -86,15 +87,17 @@ try {
                 Stage stage = new Stage();
                Parent root;
         
-            root = FXMLLoader.load(getClass().getResource(""));
+            root = FXMLLoader.load(getClass().getResource("show_my_child.fxml"));
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);
-               stage.setTitle("Teacher profile");
+               stage.setTitle("Parent  profile");
                stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();} 
-catch (IOException ex) {       
+catch (IOException ex) {
+            
         }
+
             } 
 
       else{
@@ -102,7 +105,7 @@ catch (IOException ex) {
 JOptionPane.showMessageDialog(null, "Please try Again !");
      
       
-      }  
+      } 
         
     }
 

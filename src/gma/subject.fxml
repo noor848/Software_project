@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -12,24 +13,24 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="655.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.SubjectController">
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="655.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.SubjectController">
     <stylesheets>
         <URL value="@subject.css" />
     </stylesheets>
    <children>
-      <Pane fx:id="bks" layoutX="198.0" prefHeight="607.0" prefWidth="466.0" style="-fx-background-color: #c5e0e0;">
+      <Pane fx:id="bks" layoutX="200.0" prefHeight="607.0" prefWidth="466.0" style="-fx-background-color: #C5E0E0;">
          <children>
             <ImageView fitHeight="106.0" fitWidth="126.0" layoutX="331.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/book.png" />
                </image>
             </ImageView>
-            <Label layoutX="34.0" layoutY="128.0" prefHeight="67.0" prefWidth="90.0" text="Subject">
+            <Label layoutX="57.0" layoutY="120.0" prefHeight="67.0" prefWidth="90.0" text="Subject">
                <font>
                   <Font name="Javanese Text" size="24.0" />
                </font>
             </Label>
-            <ComboBox fx:id="Sub" layoutX="151.0" layoutY="149.0" onAction="#subChoose" prefWidth="150.0" style="-fx-background-color: #E5E7E9;">
+            <ComboBox fx:id="Sub" layoutX="179.0" layoutY="141.0" onAction="#subChoose" prefWidth="150.0" style="-fx-background-color: #E5E7E9;">
                <effect>
                   <DropShadow />
                </effect>
@@ -37,12 +38,12 @@
                   <Insets />
                </opaqueInsets>
             </ComboBox>
-            <ImageView fitHeight="121.0" fitWidth="219.0" layoutX="73.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="121.0" fitWidth="219.0" layoutX="106.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
                </image>
             </ImageView>
-            <Button layoutX="301.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#toAssi" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #62989c;" text="Add Assignment">
+            <Button layoutX="301.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#toAssi" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #62989C;" text="Add Assignment">
                <font>
                   <Font name="Javanese Text" size="12.0" />
                </font>
@@ -50,24 +51,32 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Pane fx:id="p1" layoutX="112.0" layoutY="141.0" onMouseClicked="#fillcombo" prefHeight="41.0" prefWidth="57.0" />
-            <Button fx:id="b1" layoutX="47.0" layoutY="216.0" mnemonicParsing="false" onAction="#select" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: white;" visible="false">
+            <Pane fx:id="p1" layoutY="56.0" onMouseClicked="#fillcombo" prefHeight="40.0" prefWidth="106.0">
+               <children>
+                  <ImageView fitHeight="17.0" fitWidth="27.0" layoutX="5.0" layoutY="8.0" onMouseClicked="#fillcombo" onMouseDragged="#fillcombo" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/14787197661582004498-128.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="20.0" layoutY="3.0" onMouseClicked="#fillcombo" prefHeight="27.0" prefWidth="90.0" text="click to load" />
+               </children></Pane>
+            <Button fx:id="b1" layoutX="47.0" layoutY="216.0" mnemonicParsing="false" onAction="#select" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: white;" visible="false">
                <effect>
                   <DropShadow />
                </effect></Button>
-            <Button fx:id="b2" layoutX="47.0" layoutY="284.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: white;" visible="false">
+            <Button fx:id="b2" layoutX="47.0" layoutY="284.0" mnemonicParsing="false" onAction="#select" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: white;" visible="false">
                <effect>
                   <DropShadow />
                </effect></Button>
-            <Button fx:id="b3" layoutX="47.0" layoutY="358.0" mnemonicParsing="false" onAction="#select" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: white;" visible="false">
+            <Button fx:id="b3" layoutX="47.0" layoutY="358.0" mnemonicParsing="false" onAction="#select" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: white;" visible="false">
                <effect>
                   <DropShadow />
                </effect></Button>
-            <Button fx:id="b4" layoutX="47.0" layoutY="440.0" mnemonicParsing="false" onAction="#select" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: white;" visible="false">
+            <Button fx:id="b4" layoutX="47.0" layoutY="440.0" mnemonicParsing="false" onAction="#select" prefHeight="40.0" prefWidth="109.0" style="-fx-background-color: white;" visible="false">
                <effect>
                   <DropShadow />
                </effect></Button>
-            <Button layoutX="301.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#toAssi" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #62989c;" text="Update ">
+            <Button fx:id="ud" layoutX="301.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#toAssi" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #62989C;" text="Update ">
                <font>
                   <Font name="Javanese Text" size="12.0" />
                </font>
@@ -75,7 +84,7 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button fx:id="dA" disable="true" layoutX="301.0" layoutY="352.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #62989c;" text="Delete">
+            <Button fx:id="dA" disable="true" layoutX="301.0" layoutY="352.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #62989C;" text="Delete">
                <font>
                   <Font name="Javanese Text" size="12.0" />
                </font>
@@ -83,7 +92,7 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button fx:id="Ag" disable="true" layoutX="301.0" layoutY="420.0" mnemonicParsing="false" onAction="#toGrades" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #62989c;" text="Add Grades">
+            <Button fx:id="Ag" disable="true" layoutX="301.0" layoutY="420.0" mnemonicParsing="false" onAction="#toGrades" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #62989C;" text="Add Grades">
                <font>
                   <Font name="Javanese Text" size="12.0" />
                </font>
@@ -91,9 +100,25 @@
                   <DropShadow />
                </effect>
             </Button>
+            <TextField fx:id="t1" layoutX="179.0" layoutY="216.0" prefHeight="40.0" prefWidth="109.0" visible="false">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="t3" layoutX="179.0" layoutY="358.0" prefHeight="40.0" prefWidth="109.0" visible="false">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="t4" layoutX="183.0" layoutY="440.0" prefHeight="40.0" prefWidth="109.0" visible="false">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="t2" layoutX="179.0" layoutY="284.0" prefHeight="40.0" prefWidth="109.0" visible="false">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
          </children>
       </Pane>
-      <Pane prefHeight="607.0" prefWidth="200.0" style="-fx-background-color: #62989c;">
+      <Pane prefHeight="607.0" prefWidth="200.0" style="-fx-background-color: #62989C;">
          <children>
             <ImageView fitHeight="116.0" fitWidth="126.0" layoutX="28.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -107,15 +132,15 @@
             </Label>
             <ImageView fitHeight="40.0" fitWidth="27.0" layoutX="88.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/14787197661582004498-128.png" />
+                  <Image url="@../img/709624.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="88.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/chat%20(1).png" />
+                  <Image url="@../img/chat.png" />
                </image>
             </ImageView>
-            <Label layoutX="45.0" layoutY="342.0" onMouseClicked="#toChat" prefHeight="40.0" prefWidth="97.0" text="Chat">
+            <Label layoutX="45.0" layoutY="342.0" onMouseClicked="#toChat" prefHeight="40.0" prefWidth="42.0" text="Chat">
                <font>
                   <Font name="Javanese Text" size="14.0" />
                </font>

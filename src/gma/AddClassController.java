@@ -5,15 +5,22 @@
  */
 package gma;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
 /**
@@ -60,5 +67,25 @@ public class AddClassController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void back(ActionEvent event) {
+        
+            try {
+                Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("Admin.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.setTitle("Admin profile");
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();} 
+catch (IOException ex) {
+            
+        }
+        
+    }
     
 }

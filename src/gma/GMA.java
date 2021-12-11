@@ -47,7 +47,7 @@ public class GMA extends Application {
         
                Parent root;
         
-               root = FXMLLoader.load(getClass().getResource("show_my_child.fxml"));
+               root = FXMLLoader.load(getClass().getResource("Stu_Or_Tea_Or_Par.fxml"));
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);
@@ -76,11 +76,11 @@ public class GMA extends Application {
      * @param args the command line arguments
      */
      public void init() throws Exception{
-        for(int i =350 ; i<count ;i++){
+     for(int i =350 ; i<count ;i++){
             double prog = (100*i)/count;
             LauncherImpl.notifyPreloader(this, new Preloader.ProgressNotification(prog));
         }
-        
+      
         
         
         

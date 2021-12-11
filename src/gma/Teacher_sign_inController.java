@@ -86,7 +86,7 @@ try {
                 Stage stage = new Stage();
                Parent root;
         
-            root = FXMLLoader.load(getClass().getResource(""));
+            root = FXMLLoader.load(getClass().getResource("subject.fxml"));
         
                Scene scene = new Scene(root);  
                stage.setScene(scene);

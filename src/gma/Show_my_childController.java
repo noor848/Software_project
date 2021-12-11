@@ -98,7 +98,7 @@ ObservableList  observableList ;
 "INNER JOIN  subject on subject.class_id=class.id\n" +
 "INNER JOIN grades on grades.id_sub =subject.id \n" +
 "INNER JOIN assignments on grades.Assign =assignments.id\n" +
-"\n" +
+"\n"+
 "\n" +
 "where id_s =? AND subject.name=? ");
       ps.setInt(1,Integer.parseInt(search.getText())); 

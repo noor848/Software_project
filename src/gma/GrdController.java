@@ -5,6 +5,8 @@
  */
 package gma;
 
+import static gma.AssignmentController.Assid;
+import static gma.SubjectController.idClass;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -50,8 +52,8 @@ public class GrdController implements Initializable {
      * Initializes the controller class.
      */
     
-     int AssID = 1; //this from prev page!
-     int ClassID = 11; //this from prev page!
+     int AssID = Assid; //this from prev page!
+     int ClassID = idClass; //this from prev page!
 
     
       @Override

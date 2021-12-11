@@ -22,6 +22,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.input.ContextMenuEvent;
 import javafx.scene.input.MouseEvent;
@@ -106,11 +107,43 @@ public class Stu_Or_Tea_Or_ParController implements Initializable {
                stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();
     }
-    
+      @FXML
+    private void teacher(ActionEvent event) throws Exception {
+        Stage stage = new Stage();
+               Parent root;
+               root = FXMLLoader.load(getClass().getResource("sign_in.fxml"));
+               Scene scene = new Scene(root);
+               stage.setScene(scene);
+               stage.setTitle("Welcome to GMA");
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+    }
+      @FXML
+    private void parent(ActionEvent event) throws Exception {
+        Stage stage = new Stage();
+               Parent root;
+               root = FXMLLoader.load(getClass().getResource("parent_sign_in.fxml"));
+               Scene scene = new Scene(root);
+               stage.setScene(scene);
+               stage.setTitle("Welcome to GMA");
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+    }
+      @FXML
+private void exitButtonOnAction(ActionEvent event){
+    int c =JOptionPane.showConfirmDialog(null, "Are you sure?", "WARNING", JOptionPane.YES_NO_OPTION);
+    if (c == JOptionPane.YES_OPTION) {
+    ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+} else {
+}
+         }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    } 
+    
+    
+    
 
    
 }

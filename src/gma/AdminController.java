@@ -45,5 +45,67 @@ public class AdminController implements Initializable {
                stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();} 
 
+    @FXML
+    private void chang_pass(ActionEvent event) throws IOException {
+          Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("Admin_pass.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+        
+    }
+
+    @FXML
+    private void add_announce(ActionEvent event) throws IOException {
+        
+            Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("Add_Ann.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide(); 
+        
+        
+        
+    }
+
+    @FXML
+    private void add_class(ActionEvent event) throws IOException {
+        
+        
+             Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("AddClass.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+        
+    }
+
+    @FXML
+    private void add_sub(ActionEvent event) throws IOException {
+        
+             Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("AddSubjectNew.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();
+        
+        
+    }
+    }
     
-}

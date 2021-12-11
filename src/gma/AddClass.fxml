@@ -8,13 +8,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="gma.AddClassController">
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.AddClassController">
    <children>
       <AnchorPane prefHeight="483.0" prefWidth="711.0">
          <children>
             <Button layoutX="193.0" layoutY="385.0" mnemonicParsing="false" onMouseClicked="#addClass" prefHeight="61.0" prefWidth="196.0" styleClass="shiny" stylesheets="@../../../../../Documents/NetBeansProjects/Teacher/src/teacher/mystyle.css" text="Add" textFill="#477fdae5" />
-            <Button layoutX="444.0" layoutY="385.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="196.0" styleClass="shiny" stylesheets="@../../../../../Documents/NetBeansProjects/Teacher/src/teacher/mystyle.css" text="Back" textFill="#477fdae5" />
+            <Button layoutX="444.0" layoutY="385.0" mnemonicParsing="false" onAction="#back" prefHeight="61.0" prefWidth="196.0" styleClass="shiny" stylesheets="@../../../../../Documents/NetBeansProjects/Teacher/src/teacher/mystyle.css" text="Back" textFill="#477fdae5" />
             <ImageView fitHeight="50.0" fitWidth="68.0" layoutX="199.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/20647425811537355420-64.png" />
