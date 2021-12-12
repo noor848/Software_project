@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="710.0" style="-fx-background-color: #f5f7f6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.Teacher_sign_inController">
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="710.0" style="-fx-background-color: #f5f7f6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.Parent_sign_inController">
    <children>
       <TextField fx:id="email" layoutX="422.0" layoutY="206.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter your email" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
       <PasswordField fx:id="pass" layoutX="422.0" layoutY="302.0" prefHeight="33.0" prefWidth="213.0" promptText="Enter your password" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />

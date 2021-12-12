@@ -57,8 +57,8 @@
                      </image>
                   </ImageView>
                   <RadioButton fx:id="studentButton" layoutX="-9.0" layoutY="390.0" mnemonicParsing="false" onAction="#choosedStudent" text="Student" textFill="#0b7cc6" />
-                  <RadioButton layoutX="124.0" layoutY="390.0" mnemonicParsing="false" text="Parent" textFill="#0b7cc6" />
-                  <RadioButton layoutX="245.0" layoutY="390.0" mnemonicParsing="false" text="Teacher" textFill="#0b7cc6" />
+                  <RadioButton fx:id="parent_radio" layoutX="124.0" layoutY="390.0" mnemonicParsing="false" onAction="#choosedparent" text="Parent" textFill="#0b7cc6" />
+                  <RadioButton fx:id="teacher_radio" layoutX="245.0" layoutY="390.0" mnemonicParsing="false" onAction="#choosedTeacher" text="Teacher" textFill="#0b7cc6" />
                   <Button id="bevel" layoutX="126.0" layoutY="433.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="43.0" prefWidth="88.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Exit" textFill="#487fd9e5" />
                </children>
             </AnchorPane>

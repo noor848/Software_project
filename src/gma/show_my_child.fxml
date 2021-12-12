@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
@@ -10,86 +11,63 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="852.0" style="-fx-background-color: yellow;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.Show_my_childController">
+<AnchorPane id="AnchorPane" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="815.0" style="-fx-background-color: #B2BEB5;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gma.Show_my_childController">
    
    <children>
-      <Label layoutX="169.0" layoutY="202.0" prefHeight="27.0" prefWidth="159.0" style="-fx-background-color: #62989c;" text="Search_id Student " textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font></Label>
-      <TextField fx:id="search" layoutX="337.0" layoutY="200.0" prefHeight="32.0" prefWidth="200.0" />
-      <TextField fx:id="classid" editable="false" layoutX="287.0" layoutY="388.0" prefHeight="32.0" prefWidth="200.0" />
-      <TextField fx:id="studentid" editable="false" layoutX="287.0" layoutY="452.0" prefHeight="32.0" prefWidth="200.0" />
-      <TextField fx:id="name" editable="false" layoutX="287.0" layoutY="514.0" prefHeight="32.0" prefWidth="200.0" />
-      <Label layoutX="170.0" layoutY="395.0" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: #62989c;" text="Class ID" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font></Label>
-      <Label layoutX="173.0" layoutY="513.0" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: #62989c;" text="Name" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font></Label>
-      <Label layoutX="171.0" layoutY="451.0" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: #62989c;" text="Student ID" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font></Label>
-      <Label layoutX="569.0" layoutY="322.0" style="-fx-background-color: #62989c;" text="Grades" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font></Label>
-      <Button fx:id="search_button" layoutX="639.0" layoutY="199.0" mnemonicParsing="false" onAction="#search_handle" prefHeight="53.0" prefWidth="104.0" style="-fx-background-color: darkblue;" text="Search" textFill="WHITE">
+      <TextField fx:id="search" layoutX="208.0" layoutY="206.0" prefHeight="32.0" prefWidth="200.0" />
+      <TextField fx:id="classid" editable="false" layoutX="208.0" layoutY="398.0" prefHeight="32.0" prefWidth="200.0" />
+      <TextField fx:id="studentid" editable="false" layoutX="208.0" layoutY="462.0" prefHeight="32.0" prefWidth="200.0" />
+      <TextField fx:id="name" editable="false" layoutX="208.0" layoutY="524.0" prefHeight="32.0" prefWidth="200.0" />
+      <Button fx:id="search_button" layoutX="480.0" layoutY="203.0" mnemonicParsing="false" onAction="#search_handle" prefHeight="55.0" prefWidth="122.0" scaleShape="false" style="-fx-background-color: #62989c;" text="Search" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
          <font>
             <Font name="System Bold Italic" size="14.0" />
-         </font></Button>
-      <TextField fx:id="subject" layoutX="337.0" layoutY="261.0" prefHeight="32.0" prefWidth="200.0" />
-      <Label layoutX="239.0" layoutY="264.0" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #62989c;" text="Subject" textFill="WHITE">
+         </font>
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor></Button>
+      <TextField fx:id="subject" layoutX="208.0" layoutY="267.0" prefHeight="32.0" prefWidth="200.0" />
+      <ListView fx:id="grade1" layoutX="480.0" layoutY="364.0" prefHeight="225.0" prefWidth="57.0" />
+      <ListView fx:id="assign" layoutX="580.0" layoutY="364.0" prefHeight="225.0" prefWidth="159.0" />
+      <BorderPane prefHeight="643.0" prefWidth="78.0" style="-fx-background-color: #62989c;" />
+      <Label layoutX="133.0" layoutY="214.0" prefHeight="17.0" prefWidth="22.0" text="ID" textAlignment="CENTER" textFill="#fcfafa">
          <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font></Label>
-      <ListView fx:id="grade1" layoutX="569.0" layoutY="359.0" prefHeight="225.0" prefWidth="57.0" />
-      <ListView fx:id="assign" layoutX="669.0" layoutY="359.0" prefHeight="225.0" prefWidth="159.0" />
-      <Label layoutX="683.0" layoutY="322.0" prefHeight="27.0" prefWidth="134.0" style="-fx-background-color: #62989c;" text="Assignments" textAlignment="JUSTIFY" textFill="WHITE">
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="268.0" prefHeight="30.0" prefWidth="85.0" text="Subject" textAlignment="CENTER" textFill="#fcfafa">
          <font>
-            <Font name="System Bold" size="18.0" />
-         </font></Label>
-      <BorderPane layoutY="-7.0" prefHeight="188.0" prefWidth="852.0" style="-fx-background-color: white;">
-         <center>
-            <ImageView fitHeight="118.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-               <image>
-                  <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
-               </image>
-            </ImageView>
-         </center>
-         <left>
-            <ImageView fitHeight="110.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-               <image>
-                  <Image url="@../img/homework.png" />
-               </image>
-            </ImageView>
-         </left>
-         <right>
-            <ImageView fitHeight="122.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-               <image>
-                  <Image url="@../img/grade.png" />
-               </image>
-            </ImageView>
-         </right>
-      </BorderPane>
-      <BorderPane layoutY="182.0" prefHeight="461.0" prefWidth="159.0" style="-fx-background-color: darkblue;">
-         <bottom>
-            <ImageView fitHeight="68.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: white;" BorderPane.alignment="CENTER">
-               <image>
-                  <Image url="@../img/back%20(1).png" />
-               </image>
-            </ImageView>
-         </bottom>
-         <top>
-            <Label prefHeight="35.0" prefWidth="160.0" text="student marks" textFill="WHITE" underline="true" BorderPane.alignment="CENTER">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-         </top>
-      </BorderPane>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="480.0" layoutY="326.0" prefHeight="30.0" prefWidth="57.0" text="Grade" textAlignment="CENTER" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="326.0" prefHeight="30.0" prefWidth="141.0" text="Assignments" textAlignment="CENTER" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="399.0" prefHeight="30.0" prefWidth="85.0" text="Class ID" textAlignment="CENTER" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="463.0" prefHeight="30.0" prefWidth="104.0" text="Student ID" textAlignment="CENTER" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="525.0" prefHeight="30.0" prefWidth="85.0" text="Name" textAlignment="CENTER" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="278.0" layoutX="272.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/onlinelogomaker-111321-2108-7977.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

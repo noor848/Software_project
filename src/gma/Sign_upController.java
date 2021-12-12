@@ -16,6 +16,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 import gma.StudentCLass;
+import gma.parent_phone;
+import gma.teacherS;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -46,6 +48,11 @@ public class Sign_upController implements Initializable {
     private TextField id;
     @FXML
     private RadioButton studentButton;
+    @FXML
+    private RadioButton parent_radio;
+     @FXML
+    private RadioButton teacher_radio;
+   
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -60,7 +67,36 @@ public class Sign_upController implements Initializable {
 }
     }
 
-
+    @FXML
+    private void choosedTeacher(ActionEvent event) throws Exception { 
+        
+               if( teacher_radio.isSelected()){
+           
+           teacherS t= new  teacherS(Integer.parseInt(id.getText()),FullName.getText(),email.getText(),pass.getText());
+        
+        try {
+                Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("SignUp_Teacher.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();} 
+catch (IOException ex) {
+            
+        } 
+        
+        
+        
+       
+        
+        
+        
+        }
+    
+    }
 
     @FXML
     private void choosedStudent(ActionEvent event) throws Exception {
@@ -113,5 +149,32 @@ catch (IOException ex) {
         }
         
     }
-    
+     @FXML
+    private void choosedparent(ActionEvent event) throws Exception {
+         if( parent_radio.isSelected()){
+           
+             parent_phone p= new  parent_phone(Integer.parseInt(id.getText()),FullName.getText(),email.getText(),pass.getText());
+        
+        try {
+                Stage stage = new Stage();
+               Parent root;
+        
+            root = FXMLLoader.load(getClass().getResource("signUp_parent.fxml"));
+        
+               Scene scene = new Scene(root);  
+               stage.setScene(scene);
+               stage.show();
+                ((Node)(event.getSource())).getScene().getWindow().hide();} 
+catch (IOException ex) {
+            
+        } 
+        
+        
+        
+       
+        
+        
+        
+        }
+    }
 }

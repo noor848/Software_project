@@ -16,7 +16,7 @@
          </font>
       </Label>
       <Button layoutX="43.0" layoutY="170.0" mnemonicParsing="false" onAction="#loginButt" prefHeight="42.0" prefWidth="87.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Back" textFill="#477fdae5" />
-      <Button layoutX="416.0" layoutY="170.0" mnemonicParsing="false" onAction="#loginButt" prefHeight="42.0" prefWidth="87.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Add" textFill="#477fdae5" />
+      <Button layoutX="416.0" layoutY="170.0" mnemonicParsing="false" onAction="#Add" prefHeight="42.0" prefWidth="87.0" styleClass="buttons" stylesheets="@../../../../../../../../Desktop/DataBase/hos/src/hospital/mystyle.css" text="Add" textFill="#477fdae5" />
       <ImageView fitHeight="33.0" fitWidth="28.0" layoutX="116.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/18070286501543238910-24.png" />
